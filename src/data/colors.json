@@ -1,0 +1,227 @@
+[
+  {
+    "id": "calm-white-charcoal",
+    "mood": "차분한",
+    "name": "화이트·차콜",
+    "promptText": "화이트와 차콜 중심의 차분한 톤",
+    "isDefault": true,
+    "roles": { "bg": "#FFFFFF", "surface": "#F4F4F5", "text": "#2B2D31", "accent": "#3A3F47", "accent2": "#8A9099", "border": "#E3E4E6" }
+  },
+  {
+    "id": "calm-ivory-navy",
+    "mood": "차분한",
+    "name": "아이보리·네이비",
+    "promptText": "아이보리 바탕에 네이비로 무게를 잡은 차분한 톤",
+    "roles": { "bg": "#FAF7F0", "surface": "#F0EBDF", "text": "#1F2A44", "accent": "#24365E", "accent2": "#8C96AD", "border": "#E0D9C8" }
+  },
+  {
+    "id": "calm-greige-sage",
+    "mood": "차분한",
+    "name": "그레이지·세이지",
+    "promptText": "회색빛 베이지(그레이지)에 세이지 그린을 더한 자연스럽고 차분한 톤",
+    "roles": { "bg": "#F3F0EA", "surface": "#E8E3D9", "text": "#33362F", "accent": "#5F7355", "accent2": "#A3AD98", "border": "#D8D2C5" }
+  },
+  {
+    "id": "calm-coolgray-steelblue",
+    "mood": "차분한",
+    "name": "쿨그레이·스틸블루",
+    "promptText": "차가운 회색 바탕에 스틸블루로 포인트를 준 이성적인 톤",
+    "roles": { "bg": "#F2F4F7", "surface": "#E4E8EE", "text": "#27313D", "accent": "#3F6A94", "accent2": "#9DB2C7", "border": "#D3D9E2" }
+  },
+  {
+    "id": "warm-cream-terracotta",
+    "mood": "따뜻한",
+    "name": "크림·테라코타",
+    "promptText": "크림색 바탕에 테라코타(붉은 흙색) 포인트의 따뜻한 톤",
+    "roles": { "bg": "#FBF5EA", "surface": "#F3E8D6", "text": "#3B2A22", "accent": "#B5533A", "accent2": "#D9A483", "border": "#E6D7C0" }
+  },
+  {
+    "id": "warm-beige-brown",
+    "mood": "따뜻한",
+    "name": "베이지·브라운",
+    "promptText": "베이지와 브라운 중심의 포근하고 따뜻한 톤",
+    "roles": { "bg": "#F2E9DC", "surface": "#E7DAC8", "text": "#3A2A1E", "accent": "#7A4E2D", "accent2": "#B89878", "border": "#D8C8B2" }
+  },
+  {
+    "id": "warm-sand-burntorange",
+    "mood": "따뜻한",
+    "name": "샌드·번트오렌지",
+    "promptText": "모래색 바탕에 짙은 주황(번트오렌지) 포인트의 따뜻한 톤",
+    "roles": { "bg": "#F6EEDF", "surface": "#EBDFC9", "text": "#3A2E22", "accent": "#B84A14", "accent2": "#E0A56B", "border": "#DDCDB1" }
+  },
+  {
+    "id": "warm-offwhite-burgundy",
+    "mood": "따뜻한",
+    "name": "오프화이트·버건디",
+    "promptText": "미색 바탕에 버건디(와인빛 빨강) 포인트의 깊고 따뜻한 톤",
+    "roles": { "bg": "#FAF6F2", "surface": "#F1E9E3", "text": "#2E1F22", "accent": "#7A1F33", "accent2": "#C08A93", "border": "#E4D8D0" }
+  },
+  {
+    "id": "fresh-white-mint",
+    "mood": "상쾌한",
+    "name": "화이트·민트",
+    "promptText": "화이트 바탕에 민트 포인트의 상쾌한 톤",
+    "roles": { "bg": "#FFFFFF", "surface": "#EEF9F5", "text": "#1F3B36", "accent": "#12876B", "accent2": "#7FD1BC", "border": "#D5EEE6" }
+  },
+  {
+    "id": "fresh-sky-navy",
+    "mood": "상쾌한",
+    "name": "스카이·네이비",
+    "promptText": "하늘색 바탕에 네이비 포인트의 시원한 톤",
+    "roles": { "bg": "#EAF5FD", "surface": "#D8ECFA", "text": "#12264A", "accent": "#1B3F7A", "accent2": "#6FA8DC", "border": "#C3DDF2" }
+  },
+  {
+    "id": "fresh-lime-forest",
+    "mood": "상쾌한",
+    "name": "라임·포레스트",
+    "promptText": "연한 라임 바탕에 짙은 숲 초록 포인트의 싱그러운 톤",
+    "roles": { "bg": "#F4FAE6", "surface": "#E6F2C9", "text": "#1E3A24", "accent": "#2C6B34", "accent2": "#9BC53D", "border": "#D3E5AC" }
+  },
+  {
+    "id": "fresh-aqua-deepteal",
+    "mood": "상쾌한",
+    "name": "아쿠아·딥틸",
+    "promptText": "물빛 아쿠아 바탕에 짙은 청록(딥틸) 포인트의 맑은 톤",
+    "roles": { "bg": "#E8F8F8", "surface": "#D2EFEF", "text": "#0F3A40", "accent": "#0B6470", "accent2": "#5BBFC4", "border": "#BCE3E4" }
+  },
+  {
+    "id": "luxe-black-gold",
+    "mood": "고급스러운",
+    "name": "블랙·골드",
+    "promptText": "블랙 바탕에 골드 포인트의 고급스러운 톤",
+    "roles": { "bg": "#111111", "surface": "#1E1E1E", "text": "#F2EDE1", "accent": "#C9A24B", "accent2": "#8A7440", "border": "#333029" }
+  },
+  {
+    "id": "luxe-deepnavy-champagne",
+    "mood": "고급스러운",
+    "name": "딥네이비·샴페인",
+    "promptText": "짙은 네이비 바탕에 샴페인 골드 포인트의 고급스러운 톤",
+    "roles": { "bg": "#0E1A33", "surface": "#18274A", "text": "#F3ECDD", "accent": "#E3CFA4", "accent2": "#9C8B6A", "border": "#2A3A5E" }
+  },
+  {
+    "id": "luxe-emerald-ivory",
+    "mood": "고급스러운",
+    "name": "에메랄드·아이보리",
+    "promptText": "짙은 에메랄드 바탕에 아이보리 글자의 고급스러운 톤",
+    "roles": { "bg": "#0F3D33", "surface": "#165044", "text": "#F5F0E1", "accent": "#E9DFC3", "accent2": "#9DBFAF", "border": "#2B6657" }
+  },
+  {
+    "id": "luxe-wine-rosegold",
+    "mood": "고급스러운",
+    "name": "와인·로즈골드",
+    "promptText": "와인색 바탕에 로즈골드 포인트의 고급스러운 톤",
+    "roles": { "bg": "#3A0F1E", "surface": "#4D1829", "text": "#F7E9E4", "accent": "#E0A899", "accent2": "#A8707A", "border": "#66283B" }
+  },
+  {
+    "id": "vivid-white-cobalt",
+    "mood": "활기찬",
+    "name": "화이트·코발트",
+    "promptText": "화이트 바탕에 선명한 코발트 블루 포인트의 활기찬 톤",
+    "roles": { "bg": "#FFFFFF", "surface": "#EEF3FF", "text": "#131A2E", "accent": "#1F4FD8", "accent2": "#FFB300", "border": "#D6E0FA" }
+  },
+  {
+    "id": "vivid-yellow-black",
+    "mood": "활기찬",
+    "name": "옐로·블랙",
+    "promptText": "쨍한 노랑 바탕에 블랙 글자의 강렬하고 활기찬 톤",
+    "roles": { "bg": "#FFD60A", "surface": "#FFE55C", "text": "#111111", "accent": "#111111", "accent2": "#7A5C00", "border": "#E0B800" }
+  },
+  {
+    "id": "vivid-coral-navy",
+    "mood": "활기찬",
+    "name": "코랄·네이비",
+    "promptText": "코랄(산호색) 포인트와 네이비 글자의 발랄한 톤",
+    "roles": { "bg": "#FFF1EC", "surface": "#FFDFD4", "text": "#14213D", "accent": "#E8472B", "accent2": "#14213D", "border": "#F7C6B6" }
+  },
+  {
+    "id": "vivid-magenta-charcoal",
+    "mood": "활기찬",
+    "name": "마젠타·차콜",
+    "promptText": "화이트 바탕에 마젠타(진분홍) 포인트와 차콜 글자의 대담한 톤",
+    "roles": { "bg": "#FFFFFF", "surface": "#FBEAF4", "text": "#2A2A2E", "accent": "#D6168B", "accent2": "#2A2A2E", "border": "#F2CFE3" }
+  },
+  {
+    "id": "dark-charcoal-cyan",
+    "mood": "다크",
+    "name": "차콜·시안",
+    "promptText": "어두운 차콜 바탕에 시안(밝은 청록) 포인트의 다크 톤",
+    "roles": { "bg": "#1C1F24", "surface": "#272B32", "text": "#E8ECF1", "accent": "#3DD6E8", "accent2": "#2A8C99", "border": "#3A404A" }
+  },
+  {
+    "id": "dark-black-lime",
+    "mood": "다크",
+    "name": "블랙·라임",
+    "promptText": "블랙 바탕에 형광 라임 포인트의 다크 톤",
+    "roles": { "bg": "#0B0B0B", "surface": "#181818", "text": "#F2F2F2", "accent": "#C6F432", "accent2": "#7C9A1E", "border": "#2C2C2C" }
+  },
+  {
+    "id": "dark-navy-amber",
+    "mood": "다크",
+    "name": "네이비 다크·앰버",
+    "promptText": "어두운 네이비 바탕에 앰버(호박색) 포인트의 다크 톤",
+    "roles": { "bg": "#0F172A", "surface": "#1B2540", "text": "#E6EAF2", "accent": "#FFB020", "accent2": "#B97A10", "border": "#2C3856" }
+  },
+  {
+    "id": "dark-graphite-violet",
+    "mood": "다크",
+    "name": "그래파이트·바이올렛",
+    "promptText": "흑연색 바탕에 바이올렛 포인트의 다크 톤",
+    "roles": { "bg": "#232327", "surface": "#2F2F35", "text": "#ECEAF4", "accent": "#A78BFA", "accent2": "#6D5BB5", "border": "#43434C" }
+  },
+  {
+    "id": "pastel-lavender-cream",
+    "mood": "파스텔",
+    "name": "라벤더·크림",
+    "promptText": "크림 바탕에 라벤더 포인트의 부드러운 파스텔 톤",
+    "roles": { "bg": "#FBF8F1", "surface": "#EDE7F8", "text": "#3A3350", "accent": "#7B61C4", "accent2": "#C9BCEB", "border": "#E2DAF2" }
+  },
+  {
+    "id": "pastel-peach-mint",
+    "mood": "파스텔",
+    "name": "피치·민트",
+    "promptText": "복숭아색 바탕에 민트를 곁들인 달콤한 파스텔 톤",
+    "roles": { "bg": "#FFF4EC", "surface": "#FFE3D1", "text": "#3D3530", "accent": "#C2603A", "accent2": "#9ED9C3", "border": "#F5D3BD" }
+  },
+  {
+    "id": "pastel-babyblue-pink",
+    "mood": "파스텔",
+    "name": "베이비블루·핑크",
+    "promptText": "연한 하늘색 바탕에 핑크 포인트의 사랑스러운 파스텔 톤",
+    "roles": { "bg": "#EFF6FD", "surface": "#DCEBFA", "text": "#2D3A4F", "accent": "#C2477F", "accent2": "#F5B8D2", "border": "#C9DDF2" }
+  },
+  {
+    "id": "pastel-green-lemon",
+    "mood": "파스텔",
+    "name": "연두·레몬",
+    "promptText": "레몬빛 바탕에 연두 포인트의 산뜻한 파스텔 톤",
+    "roles": { "bg": "#FBFBE4", "surface": "#EAF5CF", "text": "#33402A", "accent": "#5C8A2E", "accent2": "#F2DC5D", "border": "#DCE8B8" }
+  },
+  {
+    "id": "mono-white-black",
+    "mood": "모노톤",
+    "name": "화이트·블랙",
+    "promptText": "화이트와 블랙만 쓰는 흑백 모노톤",
+    "roles": { "bg": "#FFFFFF", "surface": "#F2F2F2", "text": "#0A0A0A", "accent": "#0A0A0A", "accent2": "#6B6B6B", "border": "#D9D9D9" }
+  },
+  {
+    "id": "mono-lightgray-graphite",
+    "mood": "모노톤",
+    "name": "라이트그레이·그래파이트",
+    "promptText": "밝은 회색과 흑연색만 쓰는 회색조 모노톤",
+    "roles": { "bg": "#EDEDED", "surface": "#DFDFDF", "text": "#2B2B2B", "accent": "#454545", "accent2": "#8A8A8A", "border": "#C9C9C9" }
+  },
+  {
+    "id": "mono-blue",
+    "mood": "모노톤",
+    "name": "블루 모노",
+    "promptText": "파랑 한 가지 색의 밝기만 바꿔 쓰는 블루 모노톤",
+    "roles": { "bg": "#F3F7FC", "surface": "#E1EBF7", "text": "#10284A", "accent": "#1D4E9E", "accent2": "#7FA3D6", "border": "#C8D8EC" }
+  },
+  {
+    "id": "mono-green",
+    "mood": "모노톤",
+    "name": "그린 모노",
+    "promptText": "초록 한 가지 색의 밝기만 바꿔 쓰는 그린 모노톤",
+    "roles": { "bg": "#F3F9F4", "surface": "#E0EFE3", "text": "#123321", "accent": "#1F7A45", "accent2": "#7FBF98", "border": "#C5DFCC" }
+  }
+]

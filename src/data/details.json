@@ -1,0 +1,42 @@
+[
+  {
+    "key": "shadow", "name": "그림자", "description": "요소가 바닥에서 떠 보이는 정도",
+    "options": [
+      { "id": "shadow-none", "name": "없음", "description": "그림자 없이 평평하게", "promptText": "그림자 없음", "preview": "shadow-none" },
+      { "id": "shadow-soft", "name": "은은하게", "description": "살짝 떠 보이는 옅은 그림자", "promptText": "은은한 그림자", "preview": "shadow-soft", "isDefault": true },
+      { "id": "shadow-strong", "name": "뚜렷하게", "description": "확실히 떠 보이는 진한 그림자", "promptText": "뚜렷한 그림자", "preview": "shadow-strong" }
+    ]
+  },
+  {
+    "key": "radius", "name": "모서리", "description": "카드·버튼 모서리의 둥근 정도",
+    "options": [
+      { "id": "radius-square", "name": "직각", "description": "각진 모서리로 단정하고 딱딱하게", "promptText": "직각 모서리", "preview": "radius-square" },
+      { "id": "radius-soft", "name": "약간 둥글게", "description": "살짝 굴린 모서리로 무난하게", "promptText": "약간 둥근 모서리", "preview": "radius-soft", "isDefault": true },
+      { "id": "radius-round", "name": "많이 둥글게", "description": "크게 굴린 모서리로 부드럽고 귀엽게", "promptText": "많이 둥근 모서리", "preview": "radius-round" }
+    ]
+  },
+  {
+    "key": "decoration", "name": "장식", "description": "아이콘·무늬·도형 같은 꾸밈 요소의 양",
+    "options": [
+      { "id": "decoration-min", "name": "최소", "description": "꾸밈 없이 내용만", "promptText": "장식은 최소로", "preview": "decoration-min", "isDefault": true },
+      { "id": "decoration-mid", "name": "보통", "description": "아이콘·포인트 도형을 적당히", "promptText": "장식은 보통으로", "preview": "decoration-mid" },
+      { "id": "decoration-rich", "name": "풍부", "description": "무늬·일러스트·도형을 넉넉히", "promptText": "장식은 풍부하게", "preview": "decoration-rich" }
+    ]
+  },
+  {
+    "key": "border", "name": "테두리", "description": "카드·박스 둘레 선의 굵기",
+    "options": [
+      { "id": "border-none", "name": "없음", "description": "선 없이 면과 여백으로만 구분", "promptText": "테두리 없음", "preview": "border-none", "isDefault": true },
+      { "id": "border-thin", "name": "얇게", "description": "가는 선으로 가볍게 구분", "promptText": "얇은 테두리", "preview": "border-thin" },
+      { "id": "border-thick", "name": "굵게", "description": "굵은 선으로 또렷하게 구분", "promptText": "굵은 테두리", "preview": "border-thick" }
+    ]
+  },
+  {
+    "key": "spacing", "name": "여백", "description": "요소 사이와 가장자리의 빈 공간",
+    "options": [
+      { "id": "spacing-tight", "name": "좁게", "description": "내용을 빽빽하게 많이 담기", "promptText": "여백은 좁게", "preview": "spacing-tight" },
+      { "id": "spacing-normal", "name": "보통", "description": "무난한 간격", "promptText": "여백은 보통으로", "preview": "spacing-normal" },
+      { "id": "spacing-wide", "name": "넓게", "description": "숨 쉴 공간을 넉넉하게", "promptText": "여백은 넓게", "preview": "spacing-wide", "isDefault": true }
+    ]
+  }
+]

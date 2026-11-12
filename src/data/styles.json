@@ -1,0 +1,42 @@
+[
+  {
+    "id": "minimal", "name": "미니멀",
+    "description": "꼭 필요한 것만 남기고 여백을 넓게 쓰는 깔끔한 스타일",
+    "promptText": "미니멀리즘", "preview": "style-minimal", "isDefault": true
+  },
+  {
+    "id": "flat", "name": "플랫",
+    "description": "그림자·입체감 없이 단색 면과 단순한 도형으로 표현하는 스타일",
+    "promptText": "플랫 디자인", "preview": "style-flat", "conflictsWith": ["shadow-strong"]
+  },
+  {
+    "id": "material", "name": "머티리얼",
+    "description": "종이를 겹쳐 놓은 듯 은은한 그림자로 층을 나누는 구글식 스타일",
+    "promptText": "머티리얼 디자인", "preview": "style-material"
+  },
+  {
+    "id": "skeuo", "name": "스큐어모피즘",
+    "description": "실제 사물처럼 질감·광택·입체감을 살려 그리는 스타일",
+    "promptText": "스큐어모피즘", "preview": "style-skeuo", "conflictsWith": ["decoration-min"]
+  },
+  {
+    "id": "neumorph", "name": "뉴모피즘",
+    "description": "배경과 같은 색의 면이 살짝 솟거나 눌린 듯 보이는 부드러운 입체 스타일",
+    "promptText": "뉴모피즘", "preview": "style-neumorph", "conflictsWith": ["border-thick"]
+  },
+  {
+    "id": "glass", "name": "글라스모피즘",
+    "description": "반투명 유리판 뒤로 배경이 흐릿하게 비치는 스타일",
+    "promptText": "글라스모피즘", "preview": "style-glass"
+  },
+  {
+    "id": "neobrutal", "name": "네오브루탈리즘",
+    "description": "굵은 검은 테두리, 딱딱한 그림자, 강한 원색을 쓰는 거친 스타일",
+    "promptText": "네오브루탈리즘", "preview": "style-neobrutal", "conflictsWith": ["shadow-soft"]
+  },
+  {
+    "id": "retro", "name": "레트로",
+    "description": "옛 인쇄물·간판처럼 바랜 색과 장식 무늬를 쓰는 복고 스타일",
+    "promptText": "레트로", "preview": "style-retro", "conflictsWith": ["decoration-min"]
+  }
+]

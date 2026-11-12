@@ -1,0 +1,2961 @@
+[
+  {
+    "id": "cover",
+    "name": "표지",
+    "category": "표지·오프닝",
+    "tags": [
+      "표지",
+      "제목",
+      "중앙",
+      "오프닝"
+    ],
+    "description": "발표의 첫 장. 제목과 부제를 한가운데 크게 둔다",
+    "promptText": "표지: 큰 제목과 부제, 여백 넓게",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":2.5,"y":2.4,"w":7,"lines":1,"size":0.52,"fill":"text"},
+      {"type":"textLines","x":3.75,"y":3.3,"w":4.5,"lines":1,"size":0.18,"fill":"text","opacity":0.5},
+      {"type":"line","x1":5.4,"y1":4.15,"x2":6.6,"y2":4.15,"stroke":"accent","width":0.09},
+      {"type":"textLines","x":4.9,"y":5.75,"w":2.2,"lines":1,"size":0.11,"fill":"text","opacity":0.4}
+    ]
+  },
+  {
+    "id": "cover-left",
+    "name": "표지 · 왼쪽 정렬",
+    "category": "표지·오프닝",
+    "tags": [
+      "표지",
+      "왼쪽 정렬",
+      "포인트 막대"
+    ],
+    "description": "제목을 왼쪽에 붙이고 세로 포인트 막대로 힘을 준 표지",
+    "promptText": "왼쪽 정렬 표지: 왼쪽에 세로 포인트 막대, 그 옆에 큰 제목과 부제를 왼쪽 정렬, 왼쪽 아래에 날짜·발표자 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"rect","x":0.9,"y":2,"w":0.14,"h":1.75,"fill":"accent","radius":0},
+      {"type":"textLines","x":1.4,"y":2.05,"w":6.6,"lines":1,"size":0.52,"fill":"text"},
+      {"type":"textLines","x":1.4,"y":2.95,"w":4.2,"lines":1,"size":0.52,"fill":"text"},
+      {"type":"textLines","x":1.4,"y":3.6,"w":3.6,"lines":1,"size":0.15,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":0.9,"y":5.75,"w":2.6,"lines":1,"size":0.11,"fill":"text","opacity":0.4}
+    ]
+  },
+  {
+    "id": "cover-right",
+    "name": "표지 · 오른쪽 정렬",
+    "category": "표지·오프닝",
+    "tags": [
+      "표지",
+      "오른쪽 정렬"
+    ],
+    "description": "제목을 오른쪽 아래로 몰아 여백의 긴장감을 주는 표지",
+    "promptText": "오른쪽 정렬 표지: 화면 오른쪽 아래에 큰 제목과 부제를 오른쪽 정렬, 왼쪽 위는 크게 비우고 작은 로고 자리만 둠",
+    "source": "generated",
+    "shapes": [
+      {"type":"circle","cx":1.25,"cy":1.05,"r":0.3,"fill":"accent"},
+      {"type":"textLines","x":4.3,"y":3.6,"w":6.8,"lines":1,"size":0.52,"fill":"text"},
+      {"type":"textLines","x":6.3,"y":4.5,"w":4.8,"lines":1,"size":0.52,"fill":"text"},
+      {"type":"textLines","x":7.5,"y":5.4,"w":3.6,"lines":1,"size":0.15,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cover-image-right",
+    "name": "표지 · 좌 제목 + 우 이미지",
+    "category": "표지·오프닝",
+    "tags": [
+      "표지",
+      "이미지",
+      "좌우 분할"
+    ],
+    "description": "왼쪽에 제목, 오른쪽 절반에 대표 이미지를 두는 표지",
+    "promptText": "이미지 표지: 왼쪽 절반에 큰 제목·부제·작은 포인트 선, 오른쪽 절반은 화면 끝까지 꽉 채운 대표 이미지",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":6.6,"y":0,"w":5.4,"h":6.75,"radius":0},
+      {"type":"line","x1":0.9,"y1":2.2,"x2":1.9,"y2":2.2,"stroke":"accent","width":0.09},
+      {"type":"textLines","x":0.9,"y":2.6,"w":4.8,"lines":1,"size":0.45,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.35,"w":3.4,"lines":1,"size":0.45,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":4.2,"w":3.8,"lines":1,"size":0.15,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cover-fullbleed",
+    "name": "표지 · 풀블리드 이미지",
+    "category": "표지·오프닝",
+    "tags": [
+      "표지",
+      "배경 이미지",
+      "풀블리드"
+    ],
+    "description": "사진을 화면 가득 깔고 아래쪽에 제목을 얹는 표지",
+    "promptText": "풀블리드 표지: 화면 전체를 채운 배경 사진, 아래쪽 1/3에 어두운 반투명 띠를 깔고 그 위에 밝은 색 제목과 부제",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":0,"y":0,"w":12,"h":6.75,"radius":0},
+      {"type":"rect","x":0,"y":3.9,"w":12,"h":2.85,"fill":"text","radius":0,"opacity":0.6},
+      {"type":"textLines","x":0.9,"y":4.5,"w":6.5,"lines":1,"size":0.48,"fill":"bg"},
+      {"type":"textLines","x":0.9,"y":5.4,"w":4,"lines":1,"size":0.17,"fill":"bg","opacity":0.75}
+    ]
+  },
+  {
+    "id": "cover-typo",
+    "name": "표지 · 타이포 중심",
+    "category": "표지·오프닝",
+    "tags": [
+      "표지",
+      "타이포",
+      "큰 글자"
+    ],
+    "description": "그림 없이 아주 큰 글자만으로 화면을 채우는 표지",
+    "promptText": "타이포 표지: 이미지 없이 화면을 가득 채우는 아주 큰 제목 3줄(마지막 줄만 포인트 색), 아래에 가는 가로선과 작은 날짜·발표자 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.9,"w":9.6,"lines":1,"size":0.8,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":2.15,"w":7.4,"lines":1,"size":0.8,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.4,"w":5,"lines":1,"size":0.8,"fill":"accent"},
+      {"type":"line","x1":0.9,"y1":5.45,"x2":11.1,"y2":5.45,"stroke":"text","width":0.04},
+      {"type":"textLines","x":0.9,"y":5.8,"w":2.6,"lines":1,"size":0.11,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":9.5,"y":5.8,"w":1.6,"lines":1,"size":0.11,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cover-presenter",
+    "name": "표지 · 날짜·발표자 강조",
+    "category": "표지·오프닝",
+    "tags": [
+      "표지",
+      "발표자",
+      "날짜",
+      "프로필"
+    ],
+    "description": "제목 아래에 발표자와 날짜를 카드로 또렷하게 보여 주는 표지",
+    "promptText": "발표자 강조 표지: 위쪽에 제목과 부제, 아래쪽에 가로로 긴 카드를 두고 그 안에 원형 프로필 사진 자리·발표자 이름·소속, 오른쪽 끝에 날짜 알약 배지",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":1.3,"w":7.2,"lines":1,"size":0.48,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":2.15,"w":4.6,"lines":1,"size":0.17,"fill":"text","opacity":0.5},
+      {"type":"rect","x":0.9,"y":4.25,"w":10.2,"h":1.5,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.85,"cy":5,"r":0.42,"fill":"muted"},
+      {"type":"textLines","x":2.55,"y":4.72,"w":2.4,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":2.55,"y":5.15,"w":1.7,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"rect","x":8.9,"y":4.72,"w":1.85,"h":0.56,"fill":"accent","radius":0.28}
+    ]
+  },
+  {
+    "id": "cover-invert",
+    "name": "표지 · 배경 반전",
+    "category": "표지·오프닝",
+    "tags": [
+      "표지",
+      "배경 반전",
+      "색 배경"
+    ],
+    "invert": true,
+    "description": "배경 전체를 메인색으로 칠해 강한 첫인상을 주는 표지",
+    "promptText": "배경 반전 표지: 배경 전체를 메인색으로 채우고 가운데에 밝은 색 큰 제목과 부제, 아래에 가는 선과 날짜 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":2.2,"y":2.5,"w":7.6,"lines":1,"size":0.52,"fill":"text"},
+      {"type":"textLines","x":3.6,"y":3.4,"w":4.8,"lines":1,"size":0.18,"fill":"text","opacity":0.7},
+      {"type":"line","x1":0.9,"y1":5.5,"x2":11.1,"y2":5.5,"stroke":"text","width":0.03,"opacity":0.5},
+      {"type":"textLines","x":0.9,"y":5.8,"w":2.2,"lines":1,"size":0.11,"fill":"text","opacity":0.6}
+    ]
+  },
+  {
+    "id": "cover-split-color",
+    "name": "표지 · 색면 분할",
+    "category": "표지·오프닝",
+    "tags": [
+      "표지",
+      "색면",
+      "분할",
+      "연도"
+    ],
+    "description": "왼쪽 색면에 연도나 회차를 크게, 오른쪽에 제목을 두는 표지",
+    "promptText": "색면 분할 표지: 왼쪽 40%는 메인색 면에 연도·회차 같은 큰 숫자, 오른쪽 60%는 밝은 배경에 제목과 부제를 왼쪽 정렬",
+    "source": "generated",
+    "shapes": [
+      {"type":"rect","x":0,"y":0,"w":4.6,"h":6.75,"fill":"accent","radius":0},
+      {"type":"textLines","x":1,"y":2.75,"w":2.6,"lines":1,"size":0.75,"fill":"bg"},
+      {"type":"textLines","x":1,"y":3.85,"w":1.5,"lines":1,"size":0.14,"fill":"bg","opacity":0.7},
+      {"type":"textLines","x":5.4,"y":2.55,"w":5.4,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":5.4,"y":3.25,"w":3.8,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":5.4,"y":4.1,"w":4.2,"lines":1,"size":0.15,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "agenda",
+    "name": "목차",
+    "category": "목차·구분",
+    "tags": [
+      "목차",
+      "번호",
+      "리스트",
+      "순서"
+    ],
+    "description": "오늘 다룰 내용을 번호 순서대로 보여 준다",
+    "promptText": "목차: 번호가 붙은 항목 리스트",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"circle","cx":1.17,"cy":1.95,"r":0.27,"fill":"accent"},
+      {"type":"textLines","x":1.85,"y":1.85,"w":5.6,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":1.85,"y1":2.37,"x2":11.1,"y2":2.37,"stroke":"border","width":0.05},
+      {"type":"circle","cx":1.17,"cy":2.86,"r":0.27,"fill":"surface"},
+      {"type":"textLines","x":1.85,"y":2.76,"w":4.7,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":1.85,"y1":3.28,"x2":11.1,"y2":3.28,"stroke":"border","width":0.05},
+      {"type":"circle","cx":1.17,"cy":3.77,"r":0.27,"fill":"surface"},
+      {"type":"textLines","x":1.85,"y":3.67,"w":3.8,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":1.85,"y1":4.19,"x2":11.1,"y2":4.19,"stroke":"border","width":0.05},
+      {"type":"circle","cx":1.17,"cy":4.68,"r":0.27,"fill":"surface"},
+      {"type":"textLines","x":1.85,"y":4.58,"w":5.6,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":1.85,"y1":5.1,"x2":11.1,"y2":5.1,"stroke":"border","width":0.05},
+      {"type":"circle","cx":1.17,"cy":5.59,"r":0.27,"fill":"surface"},
+      {"type":"textLines","x":1.85,"y":5.49,"w":4.7,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":1.85,"y1":6.01,"x2":11.1,"y2":6.01,"stroke":"border","width":0.05}
+    ]
+  },
+  {
+    "id": "agenda-2col",
+    "name": "목차 · 2열",
+    "category": "목차·구분",
+    "tags": [
+      "목차",
+      "2열",
+      "6항목"
+    ],
+    "description": "항목이 많을 때 두 줄로 나눠 보여 주는 목차",
+    "promptText": "2열 목차: 위에 제목, 그 아래 2열 × 3행으로 6개 항목, 각 항목은 네모 번호 칸 + 항목 이름 + 한 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.8,"w":0.75,"h":0.75,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":1.95,"y":1.9,"w":2.4,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":1.95,"y":2.3,"w":3.4,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":0.9,"y":3.28,"w":0.75,"h":0.75,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":1.95,"y":3.38,"w":2.4,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":1.95,"y":3.78,"w":3.4,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":0.9,"y":4.77,"w":0.75,"h":0.75,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":1.95,"y":4.87,"w":2.4,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":1.95,"y":5.27,"w":3.4,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.3,"y":1.8,"w":0.75,"h":0.75,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":7.35,"y":1.9,"w":2.4,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":7.35,"y":2.3,"w":3.4,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.3,"y":3.28,"w":0.75,"h":0.75,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":7.35,"y":3.38,"w":2.4,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":7.35,"y":3.78,"w":3.4,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.3,"y":4.77,"w":0.75,"h":0.75,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":7.35,"y":4.87,"w":2.4,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":7.35,"y":5.27,"w":3.4,"lines":1,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "agenda-cards",
+    "name": "목차 · 카드형",
+    "category": "목차·구분",
+    "tags": [
+      "목차",
+      "카드",
+      "4항목"
+    ],
+    "description": "각 장을 카드 한 장씩으로 보여 주는 목차",
+    "promptText": "카드형 목차: 가로로 나란한 카드 4장, 각 카드 위쪽에 큰 번호(포인트 색), 아래쪽에 장 제목과 두 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.75,"w":2.32,"h":4.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.2,"y":2.1,"w":0.7,"lines":1,"size":0.45,"fill":"accent"},
+      {"type":"textLines","x":1.2,"y":4.3,"w":1.42,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":1.2,"y":4.72,"w":1.72,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":3.52,"y":1.75,"w":2.32,"h":4.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":3.82,"y":2.1,"w":0.7,"lines":1,"size":0.45,"fill":"accent"},
+      {"type":"textLines","x":3.82,"y":4.3,"w":1.42,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":3.82,"y":4.72,"w":1.72,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":1.75,"w":2.32,"h":4.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.45,"y":2.1,"w":0.7,"lines":1,"size":0.45,"fill":"accent"},
+      {"type":"textLines","x":6.45,"y":4.3,"w":1.42,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":6.45,"y":4.72,"w":1.72,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":8.77,"y":1.75,"w":2.32,"h":4.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":9.07,"y":2.1,"w":0.7,"lines":1,"size":0.45,"fill":"accent"},
+      {"type":"textLines","x":9.07,"y":4.3,"w":1.42,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":9.07,"y":4.72,"w":1.72,"lines":2,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "agenda-side",
+    "name": "목차 · 좌측 색면",
+    "category": "목차·구분",
+    "tags": [
+      "목차",
+      "색면",
+      "좌우 분할"
+    ],
+    "description": "왼쪽 색면에 \"목차\" 제목, 오른쪽에 항목을 나열한다",
+    "promptText": "색면 목차: 왼쪽 1/3은 메인색 면에 \"목차\" 제목, 오른쪽 2/3에 번호 + 항목 이름 5줄을 가는 구분선으로 나눠 나열",
+    "source": "generated",
+    "shapes": [
+      {"type":"rect","x":0,"y":0,"w":4,"h":6.75,"fill":"accent","radius":0},
+      {"type":"textLines","x":0.9,"y":3,"w":2.2,"lines":1,"size":0.42,"fill":"bg"},
+      {"type":"textLines","x":0.9,"y":3.75,"w":1.4,"lines":1,"size":0.13,"fill":"bg","opacity":0.7},
+      {"type":"textLines","x":4.8,"y":1.3,"w":0.42,"lines":1,"size":0.2,"fill":"accent"},
+      {"type":"textLines","x":5.6,"y":1.3,"w":4.6,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":4.8,"y1":1.9,"x2":11.1,"y2":1.9,"stroke":"border","width":0.05},
+      {"type":"textLines","x":4.8,"y":2.3,"w":0.42,"lines":1,"size":0.2,"fill":"accent"},
+      {"type":"textLines","x":5.6,"y":2.3,"w":3.5,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":4.8,"y1":2.9,"x2":11.1,"y2":2.9,"stroke":"border","width":0.05},
+      {"type":"textLines","x":4.8,"y":3.3,"w":0.42,"lines":1,"size":0.2,"fill":"accent"},
+      {"type":"textLines","x":5.6,"y":3.3,"w":4.6,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":4.8,"y1":3.9,"x2":11.1,"y2":3.9,"stroke":"border","width":0.05},
+      {"type":"textLines","x":4.8,"y":4.3,"w":0.42,"lines":1,"size":0.2,"fill":"accent"},
+      {"type":"textLines","x":5.6,"y":4.3,"w":3.5,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":4.8,"y1":4.9,"x2":11.1,"y2":4.9,"stroke":"border","width":0.05},
+      {"type":"textLines","x":4.8,"y":5.3,"w":0.42,"lines":1,"size":0.2,"fill":"accent"},
+      {"type":"textLines","x":5.6,"y":5.3,"w":4.6,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"line","x1":4.8,"y1":5.9,"x2":11.1,"y2":5.9,"stroke":"border","width":0.05}
+    ]
+  },
+  {
+    "id": "section",
+    "name": "섹션 구분",
+    "category": "목차·구분",
+    "tags": [
+      "섹션",
+      "구분",
+      "배경 반전",
+      "번호"
+    ],
+    "invert": true,
+    "description": "새 장이 시작될 때 색 배경과 큰 번호로 분위기를 바꾼다",
+    "promptText": "섹션 구분: 배경을 메인색으로 반전, 큰 번호와 제목",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":1.9,"w":1.9,"lines":1,"size":1.1,"fill":"text","opacity":0.45},
+      {"type":"textLines","x":0.9,"y":3.6,"w":6.6,"lines":1,"size":0.48,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":4.45,"w":4,"lines":1,"size":0.16,"fill":"text","opacity":0.7}
+    ]
+  },
+  {
+    "id": "section-big-number",
+    "name": "섹션 구분 · 큰 번호",
+    "category": "목차·구분",
+    "tags": [
+      "섹션",
+      "구분",
+      "큰 번호"
+    ],
+    "description": "밝은 배경에서 아주 큰 장 번호로 구분하는 간지",
+    "promptText": "큰 번호 섹션 구분: 왼쪽 1/3의 옅은 면에 포인트 색의 아주 큰 장 번호, 오른쪽에 장 제목과 두 줄 소개",
+    "source": "generated",
+    "shapes": [
+      {"type":"rect","x":0,"y":0,"w":4.4,"h":6.75,"fill":"surface","radius":0},
+      {"type":"textLines","x":1.1,"y":2.5,"w":2.2,"lines":1,"size":1.6,"fill":"accent"},
+      {"type":"textLines","x":5.2,"y":2.65,"w":5.4,"lines":1,"size":0.44,"fill":"text"},
+      {"type":"textLines","x":5.2,"y":3.5,"w":4.6,"lines":2,"size":0.15,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "section-progress",
+    "name": "섹션 구분 · 진행 바",
+    "category": "목차·구분",
+    "tags": [
+      "섹션",
+      "구분",
+      "진행 바",
+      "단계"
+    ],
+    "description": "전체 중 지금 어디쯤인지 진행 바로 함께 알려 주는 간지",
+    "promptText": "진행 바 섹션 구분: 가운데 왼쪽에 작은 장 번호 라벨과 큰 장 제목, 화면 아래에 5칸 진행 바를 두고 지금까지 온 칸만 포인트 색으로 채움",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":2.2,"w":1.3,"lines":1,"size":0.14,"fill":"accent"},
+      {"type":"textLines","x":0.9,"y":2.7,"w":7,"lines":1,"size":0.48,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.55,"w":4.2,"lines":1,"size":0.16,"fill":"text","opacity":0.5},
+      {"type":"rect","x":0.9,"y":5.5,"w":1.92,"h":0.16,"fill":"accent","radius":0.08},
+      {"type":"textLines","x":0.9,"y":5.85,"w":0.96,"lines":1,"size":0.09,"fill":"text","opacity":0.7},
+      {"type":"rect","x":2.97,"y":5.5,"w":1.92,"h":0.16,"fill":"accent","radius":0.08},
+      {"type":"textLines","x":2.97,"y":5.85,"w":0.96,"lines":1,"size":0.09,"fill":"text","opacity":0.7},
+      {"type":"rect","x":5.04,"y":5.5,"w":1.92,"h":0.16,"fill":"border","radius":0.08},
+      {"type":"textLines","x":5.04,"y":5.85,"w":0.96,"lines":1,"size":0.09,"fill":"text","opacity":0.3},
+      {"type":"rect","x":7.11,"y":5.5,"w":1.92,"h":0.16,"fill":"border","radius":0.08},
+      {"type":"textLines","x":7.11,"y":5.85,"w":0.96,"lines":1,"size":0.09,"fill":"text","opacity":0.3},
+      {"type":"rect","x":9.18,"y":5.5,"w":1.92,"h":0.16,"fill":"border","radius":0.08},
+      {"type":"textLines","x":9.18,"y":5.85,"w":0.96,"lines":1,"size":0.09,"fill":"text","opacity":0.3}
+    ]
+  },
+  {
+    "id": "section-line",
+    "name": "섹션 구분 · 가는 선",
+    "category": "목차·구분",
+    "tags": [
+      "섹션",
+      "구분",
+      "미니멀",
+      "선"
+    ],
+    "description": "가는 선 하나와 제목만으로 조용히 장을 나누는 간지",
+    "promptText": "선 섹션 구분: 밝은 배경에 작은 장 번호 라벨, 화면을 가로지르는 가는 선, 그 아래 장 제목을 왼쪽 정렬, 오른쪽 아래에 쪽 번호",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":2.45,"w":1.4,"lines":1,"size":0.13,"fill":"accent"},
+      {"type":"line","x1":0.9,"y1":2.95,"x2":11.1,"y2":2.95,"stroke":"text","width":0.04},
+      {"type":"textLines","x":0.9,"y":3.35,"w":6.5,"lines":1,"size":0.44,"fill":"text"},
+      {"type":"textLines","x":10.5,"y":5.9,"w":0.6,"lines":1,"size":0.11,"fill":"text","opacity":0.4}
+    ]
+  },
+  {
+    "id": "quote",
+    "name": "인용·핵심 메시지",
+    "category": "텍스트 중심",
+    "tags": [
+      "핵심 메시지",
+      "한 줄",
+      "중앙",
+      "강조"
+    ],
+    "description": "꼭 기억했으면 하는 문장 하나만 가운데 크게 보여 준다",
+    "promptText": "핵심 메시지: 중앙에 큰 문장 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":1.6,"y":3.05,"w":8.8,"lines":1,"size":0.55,"fill":"text"}
+    ]
+  },
+  {
+    "id": "bullets",
+    "name": "불릿 리스트",
+    "category": "텍스트 중심",
+    "tags": [
+      "불릿",
+      "리스트",
+      "글머리"
+    ],
+    "description": "여러 항목을 점(불릿)으로 나열하는 가장 기본적인 글 슬라이드",
+    "promptText": "불릿 리스트: 위에 제목, 그 아래 둥근 점(불릿)이 붙은 한 줄짜리 항목 5개를 왼쪽 정렬로 나열",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"circle","cx":1,"cy":2,"r":0.1,"fill":"accent"},
+      {"type":"textLines","x":1.45,"y":1.91,"w":8,"lines":1,"size":0.18,"fill":"text","opacity":0.7},
+      {"type":"circle","cx":1,"cy":2.86,"r":0.1,"fill":"accent"},
+      {"type":"textLines","x":1.45,"y":2.77,"w":6.6,"lines":1,"size":0.18,"fill":"text","opacity":0.7},
+      {"type":"circle","cx":1,"cy":3.72,"r":0.1,"fill":"accent"},
+      {"type":"textLines","x":1.45,"y":3.63,"w":5.2,"lines":1,"size":0.18,"fill":"text","opacity":0.7},
+      {"type":"circle","cx":1,"cy":4.58,"r":0.1,"fill":"accent"},
+      {"type":"textLines","x":1.45,"y":4.49,"w":8,"lines":1,"size":0.18,"fill":"text","opacity":0.7},
+      {"type":"circle","cx":1,"cy":5.44,"r":0.1,"fill":"accent"},
+      {"type":"textLines","x":1.45,"y":5.35,"w":6.6,"lines":1,"size":0.18,"fill":"text","opacity":0.7}
+    ]
+  },
+  {
+    "id": "quote-mark",
+    "name": "인용문",
+    "category": "텍스트 중심",
+    "tags": [
+      "인용",
+      "따옴표",
+      "출처"
+    ],
+    "description": "다른 사람의 말이나 글을 따옴표와 함께 옮겨 보여 준다",
+    "promptText": "인용문: 왼쪽 위에 포인트 색 큰 따옴표, 그 아래 큰 글씨 인용문 2줄, 짧은 선 뒤에 말한 사람 이름과 출처 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"circle","cx":1.3,"cy":1.6,"r":0.36,"fill":"accent"},
+      {"type":"circle","cx":2.2,"cy":1.6,"r":0.36,"fill":"accent"},
+      {"type":"textLines","x":0.9,"y":2.6,"w":9.6,"lines":1,"size":0.38,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.3,"w":6.8,"lines":1,"size":0.38,"fill":"text"},
+      {"type":"line","x1":0.9,"y1":4.55,"x2":1.9,"y2":4.55,"stroke":"accent","width":0.07},
+      {"type":"textLines","x":0.9,"y":4.9,"w":2.6,"lines":1,"size":0.14,"fill":"text","opacity":0.55}
+    ]
+  },
+  {
+    "id": "definition",
+    "name": "용어 정의",
+    "category": "텍스트 중심",
+    "tags": [
+      "용어",
+      "정의",
+      "개념",
+      "사전"
+    ],
+    "description": "새로운 용어를 왼쪽에 크게, 뜻을 오른쪽에 풀어 쓴다",
+    "promptText": "용어 정의: 왼쪽에 용어를 크게 쓰고 그 아래 작은 영문·발음, 가운데 포인트 색 세로선, 오른쪽에 뜻풀이 문단 5줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":2.6,"w":3.3,"lines":1,"size":0.52,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.4,"w":1.7,"lines":1,"size":0.13,"fill":"text","opacity":0.45},
+      {"type":"line","x1":5,"y1":1.6,"x2":5,"y2":5.2,"stroke":"accent","width":0.07},
+      {"type":"textLines","x":5.6,"y":2.3,"w":5.4,"lines":5,"size":0.16,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "question",
+    "name": "질문 제시",
+    "category": "텍스트 중심",
+    "tags": [
+      "질문",
+      "물음",
+      "도입",
+      "생각"
+    ],
+    "description": "청중에게 질문을 던져 생각하게 만드는 슬라이드",
+    "promptText": "질문 제시: 가운데 위에 포인트 색 큰 원(물음표 자리), 그 아래 큰 글씨 질문 한 줄을 가운데 정렬, 맨 아래 작은 보조 문구",
+    "source": "generated",
+    "shapes": [
+      {"type":"circle","cx":6,"cy":2.1,"r":0.85,"fill":"accent"},
+      {"type":"circle","cx":6,"cy":2.1,"r":0.3,"fill":"bg"},
+      {"type":"textLines","x":2.6,"y":3.7,"w":6.8,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":4.2,"y":4.55,"w":3.6,"lines":1,"size":0.15,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "two-column-text",
+    "name": "2단 텍스트",
+    "category": "텍스트 중심",
+    "tags": [
+      "2단",
+      "본문",
+      "문단"
+    ],
+    "description": "긴 글을 신문처럼 두 단으로 나눠 읽기 쉽게 한다",
+    "promptText": "2단 텍스트: 위에 제목, 그 아래 본문을 같은 너비의 2단으로 나누고 각 단 맨 위에 작은 소제목",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":1.75,"w":2.2,"lines":1,"size":0.16,"fill":"accent"},
+      {"type":"textLines","x":0.9,"y":2.25,"w":4.8,"lines":9,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":6.3,"y":1.75,"w":2.2,"lines":1,"size":0.16,"fill":"accent"},
+      {"type":"textLines","x":6.3,"y":2.25,"w":4.8,"lines":9,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "summary-box",
+    "name": "요약 박스",
+    "category": "텍스트 중심",
+    "tags": [
+      "요약",
+      "박스",
+      "강조 상자"
+    ],
+    "description": "설명 글 아래에 꼭 기억할 내용을 상자로 따로 묶는다",
+    "promptText": "요약 박스: 위에 제목과 본문 3줄, 아래에 왼쪽 변이 포인트 색 굵은 선인 강조 상자를 두고 그 안에 소제목과 요약 2줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":1.75,"w":10.2,"lines":3,"size":0.15,"fill":"text","opacity":0.5},
+      {"type":"rect","x":0.9,"y":3.55,"w":10.2,"h":2.3,"fill":"surface","radius":0.14,"stroke":"border"},
+      {"type":"rect","x":0.9,"y":3.55,"w":0.16,"h":2.3,"fill":"accent","radius":0},
+      {"type":"textLines","x":1.5,"y":3.95,"w":2.8,"lines":1,"size":0.2,"fill":"text"},
+      {"type":"textLines","x":1.5,"y":4.55,"w":8.9,"lines":2,"size":0.15,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "statement-sub",
+    "name": "핵심 문장 + 근거 3개",
+    "category": "텍스트 중심",
+    "tags": [
+      "주장",
+      "근거",
+      "3열"
+    ],
+    "description": "위에 주장을 크게, 아래에 뒷받침하는 근거 셋을 나란히 둔다",
+    "promptText": "주장과 근거: 위쪽에 큰 글씨 주장 2줄, 가로 구분선 아래에 3열로 근거를 나란히 배치(각 열은 포인트 색 소제목 + 설명 3줄)",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":1,"w":9.6,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":1.75,"w":6,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"line","x1":0.9,"y1":3.2,"x2":11.1,"y2":3.2,"stroke":"border","width":0.05},
+      {"type":"textLines","x":0.9,"y":3.7,"w":1.53,"lines":1,"size":0.17,"fill":"accent"},
+      {"type":"textLines","x":0.9,"y":4.2,"w":3.07,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":4.47,"y":3.7,"w":1.53,"lines":1,"size":0.17,"fill":"accent"},
+      {"type":"textLines","x":4.47,"y":4.2,"w":3.07,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":8.03,"y":3.7,"w":1.53,"lines":1,"size":0.17,"fill":"accent"},
+      {"type":"textLines","x":8.03,"y":4.2,"w":3.07,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "numbered-points",
+    "name": "번호 문단",
+    "category": "텍스트 중심",
+    "tags": [
+      "번호",
+      "문단",
+      "3가지"
+    ],
+    "description": "세 가지 내용을 번호와 함께 위에서 아래로 설명한다",
+    "promptText": "번호 문단: 위에 제목, 그 아래 세로로 3단락, 각 단락은 왼쪽에 포인트 색 네모 번호 칸, 오른쪽에 소제목과 설명 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.75,"w":0.85,"h":0.85,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":2.15,"y":1.85,"w":3.6,"lines":1,"size":0.2,"fill":"text"},
+      {"type":"textLines","x":2.15,"y":2.3,"w":8.6,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":0.9,"y":3.27,"w":0.85,"h":0.85,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":2.15,"y":3.37,"w":3.6,"lines":1,"size":0.2,"fill":"text"},
+      {"type":"textLines","x":2.15,"y":3.82,"w":8.6,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":0.9,"y":4.78,"w":0.85,"h":0.85,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":2.15,"y":4.88,"w":3.6,"lines":1,"size":0.2,"fill":"text"},
+      {"type":"textLines","x":2.15,"y":5.33,"w":8.6,"lines":2,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "text-sidebar",
+    "name": "본문 + 사이드 노트",
+    "category": "텍스트 중심",
+    "tags": [
+      "본문",
+      "사이드",
+      "참고",
+      "노트"
+    ],
+    "description": "본문 옆에 참고 사항이나 팁을 작은 상자로 곁들인다",
+    "promptText": "본문과 사이드 노트: 왼쪽 2/3에 제목과 본문 문단, 오른쪽 1/3에 옅은 면 상자를 세로로 길게 두고 그 안에 포인트 색 \"참고\" 소제목과 메모 5줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":1.8,"w":6.3,"lines":9,"size":0.14,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.9,"y":1.55,"w":3.2,"h":4.35,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":8.2,"y":1.95,"w":1.5,"lines":1,"size":0.17,"fill":"accent"},
+      {"type":"textLines","x":8.2,"y":2.5,"w":2.6,"lines":6,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "compare3",
+    "name": "3요소 비교",
+    "category": "카드·그리드",
+    "tags": [
+      "3요소",
+      "3열",
+      "카드",
+      "비교"
+    ],
+    "description": "세 가지를 같은 크기의 카드로 나란히 놓고 견준다",
+    "promptText": "3요소 비교: 3열 카드, 제목과 짧은 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.22,"y":2.02,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.22,"y":2.42,"w":2.56,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.4,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":4.72,"y":2.02,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":4.72,"y":2.42,"w":2.56,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.9,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":8.22,"y":2.02,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":8.22,"y":2.42,"w":2.56,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cards4",
+    "name": "4요소 카드",
+    "category": "카드·그리드",
+    "tags": [
+      "4요소",
+      "2×2",
+      "카드",
+      "아이콘"
+    ],
+    "description": "네 가지 내용을 2×2 카드에 아이콘과 함께 담는다",
+    "promptText": "4요소 카드: 2×2 카드, 각 카드에 아이콘·제목·한 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.6,"w":4.95,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.55,"cy":2.64,"r":0.32,"fill":"accent"},
+      {"type":"textLines","x":2.2,"y":2.29,"w":2.23,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":2.2,"y":2.79,"w":3.25,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":1.6,"w":4.95,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":6.8,"cy":2.64,"r":0.32,"fill":"accent"},
+      {"type":"textLines","x":7.45,"y":2.29,"w":2.23,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":7.45,"y":2.79,"w":3.25,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":0.9,"y":3.93,"w":4.95,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.55,"cy":4.96,"r":0.32,"fill":"accent"},
+      {"type":"textLines","x":2.2,"y":4.61,"w":2.23,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":2.2,"y":5.11,"w":3.25,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":3.93,"w":4.95,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":6.8,"cy":4.96,"r":0.32,"fill":"accent"},
+      {"type":"textLines","x":7.45,"y":4.61,"w":2.23,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":7.45,"y":5.11,"w":3.25,"lines":1,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cards6",
+    "name": "6요소 카드 (3×2)",
+    "category": "카드·그리드",
+    "tags": [
+      "6요소",
+      "3×2",
+      "카드"
+    ],
+    "description": "여섯 가지 내용을 3×2 카드로 한눈에 보여 준다",
+    "promptText": "6요소 카드: 3열 × 2행 카드 6장, 각 카드에 작은 아이콘·제목·한 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.6,"w":3.2,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.46,"cy":2.16,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":1.22,"y":2.65,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.22,"y":3.05,"w":2.56,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.4,"y":1.6,"w":3.2,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":4.96,"cy":2.16,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":4.72,"y":2.65,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":4.72,"y":3.05,"w":2.56,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.9,"y":1.6,"w":3.2,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":8.46,"cy":2.16,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":8.22,"y":2.65,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":8.22,"y":3.05,"w":2.56,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":0.9,"y":3.93,"w":3.2,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.46,"cy":4.49,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":1.22,"y":4.97,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.22,"y":5.38,"w":2.56,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.4,"y":3.93,"w":3.2,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":4.96,"cy":4.49,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":4.72,"y":4.97,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":4.72,"y":5.38,"w":2.56,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.9,"y":3.93,"w":3.2,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":8.46,"cy":4.49,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":8.22,"y":4.97,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":8.22,"y":5.38,"w":2.56,"lines":1,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "bento4",
+    "name": "벤토 4셀",
+    "category": "카드·그리드",
+    "tags": [
+      "벤토",
+      "4셀",
+      "비대칭"
+    ],
+    "description": "큰 칸 하나와 작은 칸 셋을 도시락처럼 맞춘다",
+    "promptText": "벤토 4셀: 왼쪽 절반을 차지하는 큰 칸 1개(메인 내용), 오른쪽 위에 가로로 긴 칸 1개, 오른쪽 아래에 작은 칸 2개를 빈틈없이 배치",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.5,"w":5,"h":4.5,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":1.3,"y":4.6,"w":3,"lines":1,"size":0.26,"fill":"bg"},
+      {"type":"textLines","x":1.3,"y":5.2,"w":2,"lines":1,"size":0.13,"fill":"bg","opacity":0.7},
+      {"type":"rect","x":6.15,"y":1.5,"w":4.95,"h":2.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.5,"y":1.9,"w":2.2,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":6.5,"y":2.4,"w":4,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":3.85,"w":2.35,"h":2.15,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":6.75,"cy":4.45,"r":0.25,"fill":"accent"},
+      {"type":"textLines","x":6.5,"y":5.3,"w":1.3,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"rect","x":8.75,"y":3.85,"w":2.35,"h":2.15,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":9.35,"cy":4.45,"r":0.25,"fill":"accent2"},
+      {"type":"textLines","x":9.1,"y":5.3,"w":1.3,"lines":1,"size":0.14,"fill":"text"}
+    ]
+  },
+  {
+    "id": "bento5",
+    "name": "벤토 5셀",
+    "category": "카드·그리드",
+    "tags": [
+      "벤토",
+      "5셀",
+      "비대칭"
+    ],
+    "description": "위에 큰 칸 둘, 아래에 작은 칸 셋을 맞춘 벤토",
+    "promptText": "벤토 5셀: 윗줄에 넓은 칸 1개(약 60%)와 좁은 칸 1개(약 40%), 아랫줄에 같은 너비의 칸 3개, 넓은 칸 하나만 포인트 색으로 강조",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.5,"w":6.1,"h":2.3,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.25,"y":1.9,"w":2.6,"lines":1,"size":0.2,"fill":"text"},
+      {"type":"textLines","x":1.25,"y":2.45,"w":4.8,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.25,"y":1.5,"w":3.85,"h":2.3,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":7.6,"y":2.3,"w":1.9,"lines":1,"size":0.5,"fill":"bg"},
+      {"type":"textLines","x":7.6,"y":3.1,"w":1.4,"lines":1,"size":0.12,"fill":"bg","opacity":0.7},
+      {"type":"rect","x":0.9,"y":4.05,"w":3.23,"h":1.95,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.45,"cy":4.6,"r":0.22,"fill":"accent"},
+      {"type":"textLines","x":1.23,"y":5.1,"w":1.62,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":1.23,"y":5.45,"w":2.53,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.38,"y":4.05,"w":3.23,"h":1.95,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":4.93,"cy":4.6,"r":0.22,"fill":"accent"},
+      {"type":"textLines","x":4.71,"y":5.1,"w":1.62,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":4.71,"y":5.45,"w":2.53,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.87,"y":4.05,"w":3.23,"h":1.95,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":8.42,"cy":4.6,"r":0.22,"fill":"accent"},
+      {"type":"textLines","x":8.2,"y":5.1,"w":1.62,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":8.2,"y":5.45,"w":2.53,"lines":1,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "bento6",
+    "name": "벤토 6셀",
+    "category": "카드·그리드",
+    "tags": [
+      "벤토",
+      "6셀",
+      "비대칭"
+    ],
+    "description": "크기가 다른 여섯 칸으로 여러 내용을 리듬 있게 담는다",
+    "promptText": "벤토 6셀: 왼쪽에 세로로 긴 칸 1개, 가운데에 위아래 2칸, 오른쪽에 위 가로로 넓은 칸 1개와 아래 작은 2칸, 총 6칸을 빈틈없이 배치하고 한 칸만 포인트 색",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.5,"w":2.9,"h":4.5,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":1.15,"y":1.75,"w":2.4,"h":2.2,"radius":0.1},
+      {"type":"textLines","x":1.15,"y":4.3,"w":1.7,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.15,"y":4.7,"w":2.3,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.05,"y":1.5,"w":2.6,"h":2.1,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":4.35,"y":2.2,"w":1.4,"lines":1,"size":0.4,"fill":"bg"},
+      {"type":"rect","x":4.05,"y":3.85,"w":2.6,"h":2.15,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":4.35,"y":4.2,"w":1.4,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":4.35,"y":4.6,"w":2,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.9,"y":1.5,"w":4.2,"h":2.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":7.2,"y":1.85,"w":2,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":7.2,"y":2.3,"w":3.5,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.9,"y":3.85,"w":1.98,"h":2.15,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":7.89,"cy":4.75,"r":0.4,"fill":"accent2"},
+      {"type":"rect","x":9.12,"y":3.85,"w":1.98,"h":2.15,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":10.11,"cy":4.75,"r":0.4,"fill":"none","stroke":"accent","width":0.12}
+    ]
+  },
+  {
+    "id": "icon-grid",
+    "name": "아이콘 그리드",
+    "category": "카드·그리드",
+    "tags": [
+      "아이콘",
+      "그리드",
+      "8개",
+      "기능"
+    ],
+    "description": "카드 없이 아이콘과 이름만 줄 맞춰 많이 보여 준다",
+    "promptText": "아이콘 그리드: 4열 × 2행으로 8개 항목, 카드 테두리 없이 각 항목은 원형 아이콘 + 아래 가운데 정렬 이름 + 짧은 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"circle","cx":2.03,"cy":2.25,"r":0.42,"fill":"accent"},
+      {"type":"textLines","x":1.33,"y":2.9,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":1.53,"y":3.25,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":4.68,"cy":2.25,"r":0.42,"fill":"accent2"},
+      {"type":"textLines","x":3.97,"y":2.9,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":4.18,"y":3.25,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":7.33,"cy":2.25,"r":0.42,"fill":"accent"},
+      {"type":"textLines","x":6.63,"y":2.9,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":6.83,"y":3.25,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":9.98,"cy":2.25,"r":0.42,"fill":"accent2"},
+      {"type":"textLines","x":9.28,"y":2.9,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":9.48,"y":3.25,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":2.03,"cy":4.5,"r":0.42,"fill":"accent"},
+      {"type":"textLines","x":1.33,"y":5.15,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":1.53,"y":5.5,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":4.68,"cy":4.5,"r":0.42,"fill":"accent2"},
+      {"type":"textLines","x":3.97,"y":5.15,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":4.18,"y":5.5,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":7.33,"cy":4.5,"r":0.42,"fill":"accent"},
+      {"type":"textLines","x":6.63,"y":5.15,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":6.83,"y":5.5,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":9.98,"cy":4.5,"r":0.42,"fill":"accent2"},
+      {"type":"textLines","x":9.28,"y":5.15,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":9.48,"y":5.5,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "cards-list",
+    "name": "가로형 카드 리스트",
+    "category": "카드·그리드",
+    "tags": [
+      "리스트",
+      "가로 카드",
+      "3행"
+    ],
+    "description": "가로로 긴 카드를 위아래로 쌓아 항목을 차례로 소개한다",
+    "promptText": "가로형 카드 리스트: 화면 너비의 가로로 긴 카드 3장을 세로로 쌓고, 각 카드는 왼쪽 아이콘 + 제목 + 한 줄 설명 + 오른쪽 끝 화살표",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.6,"w":10.2,"h":1.3,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.65,"cy":2.25,"r":0.33,"fill":"accent"},
+      {"type":"textLines","x":2.35,"y":1.95,"w":3,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":2.35,"y":2.37,"w":6,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":10.2,"y1":2.25,"x2":10.7,"y2":2.25,"stroke":"accent","width":0.06},
+      {"type":"rect","x":0.9,"y":3.15,"w":10.2,"h":1.3,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.65,"cy":3.8,"r":0.33,"fill":"accent"},
+      {"type":"textLines","x":2.35,"y":3.5,"w":3,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":2.35,"y":3.92,"w":6,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":10.2,"y1":3.8,"x2":10.7,"y2":3.8,"stroke":"accent","width":0.06},
+      {"type":"rect","x":0.9,"y":4.7,"w":10.2,"h":1.3,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.65,"cy":5.35,"r":0.33,"fill":"accent"},
+      {"type":"textLines","x":2.35,"y":5.05,"w":3,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":2.35,"y":5.47,"w":6,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":10.2,"y1":5.35,"x2":10.7,"y2":5.35,"stroke":"accent","width":0.06}
+    ]
+  },
+  {
+    "id": "cards-featured",
+    "name": "대표 카드 + 보조 2장",
+    "category": "카드·그리드",
+    "tags": [
+      "대표",
+      "강조 카드",
+      "1+2"
+    ],
+    "description": "가장 중요한 하나를 크게, 나머지 둘을 작게 보여 준다",
+    "promptText": "대표 카드와 보조 카드: 왼쪽에 포인트 색으로 채운 큰 대표 카드 1장(큰 제목 + 설명), 오른쪽에 일반 카드 2장을 위아래로 쌓음",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.6,"w":5.4,"h":4.4,"fill":"accent","radius":0.14},
+      {"type":"circle","cx":1.6,"cy":2.3,"r":0.35,"fill":"bg"},
+      {"type":"textLines","x":1.25,"y":4.1,"w":3.6,"lines":1,"size":0.3,"fill":"bg"},
+      {"type":"textLines","x":1.25,"y":4.75,"w":4.4,"lines":2,"size":0.13,"fill":"bg","opacity":0.75},
+      {"type":"rect","x":6.55,"y":1.6,"w":4.55,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.9,"y":2,"w":2.2,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":6.9,"y":2.45,"w":3.8,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.55,"y":3.93,"w":4.55,"h":2.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.9,"y":4.33,"w":2.2,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":6.9,"y":4.78,"w":3.8,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cards-2col",
+    "name": "2열 아이콘 카드",
+    "category": "카드·그리드",
+    "tags": [
+      "2열",
+      "2요소",
+      "카드",
+      "아이콘"
+    ],
+    "description": "2가지 내용을 아이콘 카드 2장에 한 줄로 나란히 담는다",
+    "promptText": "2열 아이콘 카드: 위에 제목, 세로로 긴 카드 2장을 한 줄에 나란히, 각 카드 위쪽에 원형 아이콘, 그 아래 제목과 2~3줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":4.95,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.46,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":1.22,"y":2.75,"w":2.67,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.22,"y":3.15,"w":4.31,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":1.7,"w":4.95,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":6.71,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":6.47,"y":2.75,"w":2.67,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.47,"y":3.15,"w":4.31,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cards-3col",
+    "name": "3열 아이콘 카드",
+    "category": "카드·그리드",
+    "tags": [
+      "3열",
+      "3요소",
+      "카드",
+      "아이콘"
+    ],
+    "description": "3가지 내용을 아이콘 카드 3장에 한 줄로 나란히 담는다",
+    "promptText": "3열 아이콘 카드: 위에 제목, 세로로 긴 카드 3장을 한 줄에 나란히, 각 카드 위쪽에 원형 아이콘, 그 아래 제목과 2~3줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.46,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":1.22,"y":2.75,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.22,"y":3.15,"w":2.56,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.4,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":4.96,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":4.72,"y":2.75,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":4.72,"y":3.15,"w":2.56,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.9,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":8.46,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":8.22,"y":2.75,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":8.22,"y":3.15,"w":2.56,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cards-3col-invert",
+    "name": "3열 아이콘 카드 · 배경 반전",
+    "category": "카드·그리드",
+    "invert": true,
+    "tags": [
+      "3열",
+      "3요소",
+      "카드",
+      "아이콘",
+      "배경 반전"
+    ],
+    "description": "3가지 내용을 아이콘 카드 3장에 한 줄로 나란히 담는다 (색 배경)",
+    "promptText": "3열 아이콘 카드(배경 반전): 배경을 메인색으로 반전하고 위에 제목, 세로로 긴 카드 3장을 한 줄에 나란히, 각 카드 위쪽에 원형 아이콘, 그 아래 제목과 2~3줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.46,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":1.22,"y":2.75,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.22,"y":3.15,"w":2.56,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.4,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":4.96,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":4.72,"y":2.75,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":4.72,"y":3.15,"w":2.56,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.9,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":8.46,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":8.22,"y":2.75,"w":1.59,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":8.22,"y":3.15,"w":2.56,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cards-4col",
+    "name": "4열 아이콘 카드",
+    "category": "카드·그리드",
+    "tags": [
+      "4열",
+      "4요소",
+      "카드",
+      "아이콘"
+    ],
+    "description": "4가지 내용을 아이콘 카드 4장에 한 줄로 나란히 담는다",
+    "promptText": "4열 아이콘 카드: 위에 제목, 세로로 긴 카드 4장을 한 줄에 나란히, 각 카드 위쪽에 원형 아이콘, 그 아래 제목과 2~3줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.46,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":1.22,"y":2.75,"w":1.04,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.22,"y":3.15,"w":1.68,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":3.52,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":4.08,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":3.84,"y":2.75,"w":1.04,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":3.84,"y":3.15,"w":1.68,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":6.71,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":6.47,"y":2.75,"w":1.04,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.47,"y":3.15,"w":1.68,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":8.77,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":9.33,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":9.09,"y":2.75,"w":1.04,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":9.09,"y":3.15,"w":1.68,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cards-4col-invert",
+    "name": "4열 아이콘 카드 · 배경 반전",
+    "category": "카드·그리드",
+    "invert": true,
+    "tags": [
+      "4열",
+      "4요소",
+      "카드",
+      "아이콘",
+      "배경 반전"
+    ],
+    "description": "4가지 내용을 아이콘 카드 4장에 한 줄로 나란히 담는다 (색 배경)",
+    "promptText": "4열 아이콘 카드(배경 반전): 배경을 메인색으로 반전하고 위에 제목, 세로로 긴 카드 4장을 한 줄에 나란히, 각 카드 위쪽에 원형 아이콘, 그 아래 제목과 2~3줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.46,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":1.22,"y":2.75,"w":1.04,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.22,"y":3.15,"w":1.68,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":3.52,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":4.08,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":3.84,"y":2.75,"w":1.04,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":3.84,"y":3.15,"w":1.68,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":6.71,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":6.47,"y":2.75,"w":1.04,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.47,"y":3.15,"w":1.68,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":8.77,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":9.33,"cy":2.26,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":9.09,"y":2.75,"w":1.04,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":9.09,"y":3.15,"w":1.68,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cards-5col",
+    "name": "5열 아이콘 카드",
+    "category": "카드·그리드",
+    "tags": [
+      "5열",
+      "5요소",
+      "카드",
+      "아이콘"
+    ],
+    "description": "5가지 내용을 아이콘 카드 5장에 한 줄로 나란히 담는다",
+    "promptText": "5열 아이콘 카드: 위에 제목, 세로로 긴 카드 5장을 한 줄에 나란히, 각 카드 위쪽에 원형 아이콘, 그 아래 제목과 한 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":1.88,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.44,"cy":2.24,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":1.2,"y":2.73,"w":0.79,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.2,"y":3.13,"w":1.28,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":2.98,"y":1.7,"w":1.88,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":3.52,"cy":2.24,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":3.28,"y":2.73,"w":0.79,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":3.28,"y":3.13,"w":1.28,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":5.06,"y":1.7,"w":1.88,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":5.6,"cy":2.24,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":5.36,"y":2.73,"w":0.79,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":5.36,"y":3.13,"w":1.28,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.14,"y":1.7,"w":1.88,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":7.68,"cy":2.24,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":7.44,"y":2.73,"w":0.79,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":7.44,"y":3.13,"w":1.28,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":9.22,"y":1.7,"w":1.88,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":9.76,"cy":2.24,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":9.52,"y":2.73,"w":0.79,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":9.52,"y":3.13,"w":1.28,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "cards-6col",
+    "name": "6열 아이콘 카드",
+    "category": "카드·그리드",
+    "tags": [
+      "6열",
+      "6요소",
+      "카드",
+      "아이콘"
+    ],
+    "description": "6가지 내용을 아이콘 카드 6장에 한 줄로 나란히 담는다",
+    "promptText": "6열 아이콘 카드: 위에 제목, 세로로 긴 카드 6장을 한 줄에 나란히, 각 카드 위쪽에 원형 아이콘, 그 아래 제목과 한 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":1.53,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.34,"cy":2.14,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":1.15,"y":2.59,"w":0.65,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.15,"y":2.99,"w":1.04,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":2.63,"y":1.7,"w":1.53,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":3.08,"cy":2.14,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":2.88,"y":2.59,"w":0.65,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":2.88,"y":2.99,"w":1.04,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.37,"y":1.7,"w":1.53,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":4.81,"cy":2.14,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":4.61,"y":2.59,"w":0.65,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":4.61,"y":2.99,"w":1.04,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.1,"y":1.7,"w":1.53,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":6.54,"cy":2.14,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":6.35,"y":2.59,"w":0.65,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.35,"y":2.99,"w":1.04,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.83,"y":1.7,"w":1.53,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":8.28,"cy":2.14,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":8.08,"y":2.59,"w":0.65,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":8.08,"y":2.99,"w":1.04,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":9.57,"y":1.7,"w":1.53,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":10.01,"cy":2.14,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":9.81,"y":2.59,"w":0.65,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":9.81,"y":2.99,"w":1.04,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "imgcards-2col",
+    "name": "2열 사진 카드",
+    "category": "카드·그리드",
+    "tags": [
+      "2열",
+      "사진 카드",
+      "카드",
+      "썸네일"
+    ],
+    "description": "위에 사진이 들어간 카드 2장을 나란히 놓는다",
+    "promptText": "2열 사진 카드: 위에 제목, 카드 2장을 한 줄에 나란히, 각 카드는 위쪽 절반이 사진, 아래쪽에 제목과 설명 2줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":4.95,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":0.9,"y":1.7,"w":4.95,"h":2.1,"radius":0.14},
+      {"type":"textLines","x":1.18,"y":4.1,"w":2.72,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.18,"y":4.55,"w":4.39,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":1.7,"w":4.95,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":6.15,"y":1.7,"w":4.95,"h":2.1,"radius":0.14},
+      {"type":"textLines","x":6.43,"y":4.1,"w":2.72,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.43,"y":4.55,"w":4.39,"lines":2,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "imgcards-3col",
+    "name": "3열 사진 카드",
+    "category": "카드·그리드",
+    "tags": [
+      "3열",
+      "사진 카드",
+      "카드",
+      "썸네일"
+    ],
+    "description": "위에 사진이 들어간 카드 3장을 나란히 놓는다",
+    "promptText": "3열 사진 카드: 위에 제목, 카드 3장을 한 줄에 나란히, 각 카드는 위쪽 절반이 사진, 아래쪽에 제목과 설명 2줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":0.9,"y":1.7,"w":3.2,"h":2.1,"radius":0.14},
+      {"type":"textLines","x":1.18,"y":4.1,"w":1.76,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.18,"y":4.55,"w":2.64,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.4,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":4.4,"y":1.7,"w":3.2,"h":2.1,"radius":0.14},
+      {"type":"textLines","x":4.68,"y":4.1,"w":1.76,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":4.68,"y":4.55,"w":2.64,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.9,"y":1.7,"w":3.2,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":7.9,"y":1.7,"w":3.2,"h":2.1,"radius":0.14},
+      {"type":"textLines","x":8.18,"y":4.1,"w":1.76,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":8.18,"y":4.55,"w":2.64,"lines":2,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "imgcards-4col",
+    "name": "4열 사진 카드",
+    "category": "카드·그리드",
+    "tags": [
+      "4열",
+      "사진 카드",
+      "카드",
+      "썸네일"
+    ],
+    "description": "위에 사진이 들어간 카드 4장을 나란히 놓는다",
+    "promptText": "4열 사진 카드: 위에 제목, 카드 4장을 한 줄에 나란히, 각 카드는 위쪽 절반이 사진, 아래쪽에 제목과 설명 2줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":0.9,"y":1.7,"w":2.32,"h":2.1,"radius":0.14},
+      {"type":"textLines","x":1.18,"y":4.1,"w":1.28,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.18,"y":4.55,"w":1.76,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":3.52,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":3.52,"y":1.7,"w":2.32,"h":2.1,"radius":0.14},
+      {"type":"textLines","x":3.81,"y":4.1,"w":1.28,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":3.81,"y":4.55,"w":1.76,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":6.15,"y":1.7,"w":2.32,"h":2.1,"radius":0.14},
+      {"type":"textLines","x":6.43,"y":4.1,"w":1.28,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.43,"y":4.55,"w":1.76,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":8.77,"y":1.7,"w":2.32,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"imagePlaceholder","x":8.77,"y":1.7,"w":2.32,"h":2.1,"radius":0.14},
+      {"type":"textLines","x":9.05,"y":4.1,"w":1.28,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":9.05,"y":4.55,"w":1.76,"lines":2,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "photo2",
+    "name": "사진 2장",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "2장",
+      "나란히"
+    ],
+    "description": "사진 두 장을 나란히 놓고 각각 설명을 붙인다",
+    "promptText": "사진 2장: 위에 제목, 같은 크기의 가로 사진 2장을 좌우로 나란히, 각 사진 아래에 캡션 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"imagePlaceholder","x":0.9,"y":1.6,"w":4.95,"h":3.6,"radius":0.14},
+      {"type":"textLines","x":0.9,"y":5.45,"w":2.23,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":5.8,"w":3.46,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"imagePlaceholder","x":6.15,"y":1.6,"w":4.95,"h":3.6,"radius":0.14},
+      {"type":"textLines","x":6.15,"y":5.45,"w":2.23,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":6.15,"y":5.8,"w":3.46,"lines":1,"size":0.1,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "photo3",
+    "name": "사진 3장",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "3장",
+      "세로 사진"
+    ],
+    "description": "세로로 긴 사진 세 장을 나란히 보여 준다",
+    "promptText": "사진 3장: 위에 제목, 세로로 긴 사진 3장을 같은 간격으로 나란히, 각 사진 아래 가운데 정렬 캡션",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"imagePlaceholder","x":0.9,"y":1.6,"w":3.2,"h":3.85,"radius":0.14},
+      {"type":"textLines","x":1.7,"y":5.7,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"imagePlaceholder","x":4.4,"y":1.6,"w":3.2,"h":3.85,"radius":0.14},
+      {"type":"textLines","x":5.2,"y":5.7,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"imagePlaceholder","x":7.9,"y":1.6,"w":3.2,"h":3.85,"radius":0.14},
+      {"type":"textLines","x":8.7,"y":5.7,"w":1.6,"lines":1,"size":0.14,"fill":"text"}
+    ]
+  },
+  {
+    "id": "gallery",
+    "name": "갤러리",
+    "category": "이미지 중심",
+    "tags": [
+      "갤러리",
+      "사진 모음",
+      "3×2"
+    ],
+    "description": "사진 여섯 장을 바둑판처럼 모아 보여 준다",
+    "promptText": "갤러리: 위에 제목, 같은 크기의 사진 6장을 3열 × 2행 격자로 좁은 간격을 두고 배열, 캡션 없음",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"imagePlaceholder","x":0.9,"y":1.55,"w":3.3,"h":2.17,"radius":0.08},
+      {"type":"imagePlaceholder","x":4.35,"y":1.55,"w":3.3,"h":2.17,"radius":0.08},
+      {"type":"imagePlaceholder","x":7.8,"y":1.55,"w":3.3,"h":2.17,"radius":0.08},
+      {"type":"imagePlaceholder","x":0.9,"y":3.88,"w":3.3,"h":2.17,"radius":0.08},
+      {"type":"imagePlaceholder","x":4.35,"y":3.88,"w":3.3,"h":2.17,"radius":0.08},
+      {"type":"imagePlaceholder","x":7.8,"y":3.88,"w":3.3,"h":2.17,"radius":0.08}
+    ]
+  },
+  {
+    "id": "photo-caption",
+    "name": "큰 사진 + 캡션",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "캡션",
+      "중앙"
+    ],
+    "description": "사진 한 장을 액자처럼 가운데 두고 아래에 설명을 단다",
+    "promptText": "큰 사진과 캡션: 여백을 두고 가운데에 큰 가로 사진 1장, 사진 아래에 가운데 정렬 캡션 제목과 작은 설명 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":1.6,"y":0.7,"w":8.8,"h":4.3,"radius":0.14},
+      {"type":"textLines","x":4.4,"y":5.35,"w":3.2,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":4.9,"y":5.8,"w":2.2,"lines":1,"size":0.1,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "photo-mosaic",
+    "name": "사진 모자이크 (1+2)",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "모자이크",
+      "3장",
+      "비대칭"
+    ],
+    "description": "큰 사진 하나와 작은 사진 둘을 붙여 한 덩어리로 보여 준다",
+    "promptText": "사진 모자이크: 왼쪽에 큰 사진 1장, 오른쪽에 작은 사진 2장을 위아래로 쌓아 한 덩어리로, 사진 사이 간격은 좁게, 맨 아래 왼쪽에 캡션 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":0.9,"y":0.7,"w":6.4,"h":4.9,"radius":0.1},
+      {"type":"imagePlaceholder","x":7.45,"y":0.7,"w":3.65,"h":2.38,"radius":0.1},
+      {"type":"imagePlaceholder","x":7.45,"y":3.23,"w":3.65,"h":2.38,"radius":0.1},
+      {"type":"textLines","x":0.9,"y":5.95,"w":3.4,"lines":1,"size":0.13,"fill":"text","opacity":0.55}
+    ]
+  },
+  {
+    "id": "photo-strip",
+    "name": "사진 띠 + 3단 설명",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "띠",
+      "파노라마",
+      "3단"
+    ],
+    "description": "가로로 긴 사진 띠 아래에 설명을 세 칸으로 나눠 적는다",
+    "promptText": "사진 띠와 3단 설명: 위에 제목, 화면 좌우 끝까지 닿는 가로로 긴 사진 띠, 그 아래 3열로 소제목 + 설명 2줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"imagePlaceholder","x":0,"y":1.5,"w":12,"h":2.5,"radius":0},
+      {"type":"textLines","x":0.9,"y":4.45,"w":1.53,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":4.9,"w":3.07,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":4.47,"y":4.45,"w":1.53,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":4.47,"y":4.9,"w":3.07,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":8.03,"y":4.45,"w":1.53,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":8.03,"y":4.9,"w":3.07,"lines":2,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "photo-focus",
+    "name": "사진 + 핵심 문장",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "핵심 문장",
+      "좌우 분할",
+      "강조"
+    ],
+    "description": "큰 사진 한 장 옆에 하고 싶은 말 한 문장만 크게 둔다",
+    "promptText": "사진 강조: 큰 사진 한 장과 핵심 문장 하나만 크게",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":0,"y":0,"w":6,"h":6.75,"radius":0},
+      {"type":"textLines","x":6.9,"y":2.35,"w":4.2,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":6.9,"y":3.1,"w":2.73,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"line","x1":6.9,"y1":4.05,"x2":7.9,"y2":4.05,"stroke":"accent","width":0.08}
+    ]
+  },
+  {
+    "id": "photo-right-left",
+    "name": "사진 오른쪽 + 문장 왼쪽 정렬",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "핵심 문장",
+      "사진 오른쪽",
+      "왼쪽 정렬"
+    ],
+    "description": "사진을 오른쪽에 두고 핵심 문장을 왼쪽 정렬로 둔다",
+    "promptText": "사진(오른쪽) + 핵심 문장(왼쪽 정렬): 오른쪽 절반에 화면 끝까지 채운 큰 사진, 왼쪽 절반에 핵심 문장 2줄을 왼쪽 정렬로 크게, 문장 아래 짧은 포인트 선",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":6,"y":0,"w":6,"h":6.75,"radius":0},
+      {"type":"textLines","x":0.9,"y":2.35,"w":4.2,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.1,"w":2.73,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"line","x1":0.9,"y1":4.05,"x2":1.9,"y2":4.05,"stroke":"accent","width":0.08}
+    ]
+  },
+  {
+    "id": "photo-top-left",
+    "name": "사진 위 + 문장 왼쪽 정렬",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "핵심 문장",
+      "사진 위",
+      "왼쪽 정렬"
+    ],
+    "description": "사진을 위에 두고 핵심 문장을 왼쪽 정렬로 둔다",
+    "promptText": "사진(위) + 핵심 문장(왼쪽 정렬): 위쪽 절반에 가로로 꽉 찬 사진, 아래쪽에 핵심 문장 2줄을 왼쪽 정렬로 크게, 문장 아래 짧은 포인트 선",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":0,"y":0,"w":12,"h":3.6,"radius":0},
+      {"type":"textLines","x":0.9,"y":4.2,"w":7,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":4.95,"w":4.55,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"line","x1":0.9,"y1":5.9,"x2":1.9,"y2":5.9,"stroke":"accent","width":0.08}
+    ]
+  },
+  {
+    "id": "photo-top-center",
+    "name": "사진 위 + 문장 가운데 정렬",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "핵심 문장",
+      "사진 위",
+      "가운데 정렬"
+    ],
+    "description": "사진을 위에 두고 핵심 문장을 가운데 정렬로 둔다",
+    "promptText": "사진(위) + 핵심 문장(가운데 정렬): 위쪽 절반에 가로로 꽉 찬 사진, 아래쪽에 핵심 문장 2줄을 가운데 정렬로 크게, 문장 아래 짧은 포인트 선",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":0,"y":0,"w":12,"h":3.6,"radius":0},
+      {"type":"textLines","x":2.5,"y":4.2,"w":7,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":3.73,"y":4.95,"w":4.55,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"line","x1":5.5,"y1":5.9,"x2":6.5,"y2":5.9,"stroke":"accent","width":0.08}
+    ]
+  },
+  {
+    "id": "photo-bg-left",
+    "name": "사진 배경 + 문장 왼쪽 정렬",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "핵심 문장",
+      "사진 배경",
+      "왼쪽 정렬",
+      "배경 이미지",
+      "오버레이"
+    ],
+    "description": "사진을 배경으로 깔고 그 위에 문장을 왼쪽 정렬로 얹는다",
+    "promptText": "사진(배경) + 핵심 문장(왼쪽 정렬): 화면 전체를 채운 배경 사진 위에 어두운 반투명 막을 덮고, 그 위에 밝은 색 핵심 문장 2줄을 왼쪽 정렬로 크게, 문장 아래 짧은 포인트 선",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":0,"y":0,"w":12,"h":6.75,"radius":0},
+      {"type":"rect","x":0,"y":0,"w":12,"h":6.75,"fill":"text","radius":0,"opacity":0.5},
+      {"type":"textLines","x":0.9,"y":2.5,"w":7,"lines":1,"size":0.42,"fill":"bg"},
+      {"type":"textLines","x":0.9,"y":3.25,"w":4.55,"lines":1,"size":0.42,"fill":"bg"},
+      {"type":"line","x1":0.9,"y1":4.2,"x2":1.9,"y2":4.2,"stroke":"bg","width":0.08}
+    ]
+  },
+  {
+    "id": "photo-bg-center",
+    "name": "사진 배경 + 문장 가운데 정렬",
+    "category": "이미지 중심",
+    "tags": [
+      "사진",
+      "핵심 문장",
+      "사진 배경",
+      "가운데 정렬",
+      "배경 이미지",
+      "오버레이"
+    ],
+    "description": "사진을 배경으로 깔고 그 위에 문장을 가운데 정렬로 얹는다",
+    "promptText": "사진(배경) + 핵심 문장(가운데 정렬): 화면 전체를 채운 배경 사진 위에 어두운 반투명 막을 덮고, 그 위에 밝은 색 핵심 문장 2줄을 가운데 정렬로 크게, 문장 아래 짧은 포인트 선",
+    "source": "generated",
+    "shapes": [
+      {"type":"imagePlaceholder","x":0,"y":0,"w":12,"h":6.75,"radius":0},
+      {"type":"rect","x":0,"y":0,"w":12,"h":6.75,"fill":"text","radius":0,"opacity":0.5},
+      {"type":"textLines","x":2.5,"y":2.5,"w":7,"lines":1,"size":0.42,"fill":"bg"},
+      {"type":"textLines","x":3.73,"y":3.25,"w":4.55,"lines":1,"size":0.42,"fill":"bg"},
+      {"type":"line","x1":5.5,"y1":4.2,"x2":6.5,"y2":4.2,"stroke":"bg","width":0.08}
+    ]
+  },
+  {
+    "id": "big-number",
+    "name": "큰 숫자 강조",
+    "category": "데이터·숫자",
+    "tags": [
+      "숫자",
+      "통계",
+      "강조",
+      "핵심 수치"
+    ],
+    "description": "가장 중요한 숫자 하나를 아주 크게 보여 준다",
+    "promptText": "핵심 숫자 강조: 숫자를 크게, 설명은 한 줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":1.7,"w":5.2,"lines":1,"size":1.5,"fill":"accent"},
+      {"type":"textLines","x":0.9,"y":3.75,"w":4.6,"lines":1,"size":0.19,"fill":"text","opacity":0.6},
+      {"type":"rect","x":7.6,"y":1.5,"w":3.5,"h":1.75,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":7.95,"y":1.9,"w":1.5,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":7.95,"y":2.6,"w":2.2,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.6,"y":3.55,"w":3.5,"h":1.75,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":7.95,"y":3.95,"w":1.5,"lines":1,"size":0.42,"fill":"text"},
+      {"type":"textLines","x":7.95,"y":4.65,"w":2.2,"lines":1,"size":0.12,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "numbers3",
+    "name": "숫자 3개",
+    "category": "데이터·숫자",
+    "tags": [
+      "숫자",
+      "3개",
+      "통계"
+    ],
+    "description": "세 가지 수치를 같은 무게로 나란히 보여 준다",
+    "promptText": "숫자 3개: 위에 제목, 3열로 큰 숫자(포인트 색) + 숫자 이름 + 설명 2줄, 열 사이에 가는 세로 구분선",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":2.3,"w":2.15,"lines":1,"size":0.75,"fill":"accent"},
+      {"type":"textLines","x":0.9,"y":3.5,"w":1.43,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.95,"w":2.58,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":4.57,"y":2.3,"w":2.15,"lines":1,"size":0.75,"fill":"accent"},
+      {"type":"textLines","x":4.57,"y":3.5,"w":1.43,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":4.57,"y":3.95,"w":2.58,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"line","x1":4.17,"y1":2.2,"x2":4.17,"y2":4.7,"stroke":"border","width":0.05},
+      {"type":"textLines","x":8.23,"y":2.3,"w":2.15,"lines":1,"size":0.75,"fill":"accent"},
+      {"type":"textLines","x":8.23,"y":3.5,"w":1.43,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":8.23,"y":3.95,"w":2.58,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"line","x1":7.83,"y1":2.2,"x2":7.83,"y2":4.7,"stroke":"border","width":0.05}
+    ]
+  },
+  {
+    "id": "bar-chart",
+    "name": "막대 차트",
+    "category": "데이터·숫자",
+    "tags": [
+      "차트",
+      "막대",
+      "그래프",
+      "비교"
+    ],
+    "description": "항목별 크기를 세로 막대로 비교한다",
+    "promptText": "막대 차트: 위에 제목, 세로 막대 6개의 차트를 화면 가득, 가장 높은 막대 하나만 포인트 색으로 강조하고 나머지는 보조색, 막대 아래에 항목 이름",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"line","x1":1.4,"y1":1.6,"x2":1.4,"y2":5.6,"stroke":"text","width":0.04,"opacity":0.5},
+      {"type":"line","x1":1.4,"y1":5.6,"x2":11.1,"y2":5.6,"stroke":"text","width":0.04,"opacity":0.5},
+      {"type":"rect","x":1.9,"y":4.1,"w":0.95,"h":1.5,"fill":"accent2","radius":0.06},
+      {"type":"textLines","x":1.95,"y":5.85,"w":0.85,"lines":1,"size":0.09,"fill":"text","opacity":0.4},
+      {"type":"rect","x":3.4,"y":3.3,"w":0.95,"h":2.3,"fill":"accent2","radius":0.06},
+      {"type":"textLines","x":3.45,"y":5.85,"w":0.85,"lines":1,"size":0.09,"fill":"text","opacity":0.4},
+      {"type":"rect","x":4.9,"y":3.7,"w":0.95,"h":1.9,"fill":"accent2","radius":0.06},
+      {"type":"textLines","x":4.95,"y":5.85,"w":0.85,"lines":1,"size":0.09,"fill":"text","opacity":0.4},
+      {"type":"rect","x":6.4,"y":2.5,"w":0.95,"h":3.1,"fill":"accent2","radius":0.06},
+      {"type":"textLines","x":6.45,"y":5.85,"w":0.85,"lines":1,"size":0.09,"fill":"text","opacity":0.4},
+      {"type":"rect","x":7.9,"y":3,"w":0.95,"h":2.6,"fill":"accent2","radius":0.06},
+      {"type":"textLines","x":7.95,"y":5.85,"w":0.85,"lines":1,"size":0.09,"fill":"text","opacity":0.4},
+      {"type":"rect","x":9.4,"y":1.9,"w":0.95,"h":3.7,"fill":"accent","radius":0.06},
+      {"type":"textLines","x":9.45,"y":5.85,"w":0.85,"lines":1,"size":0.09,"fill":"text","opacity":0.4}
+    ]
+  },
+  {
+    "id": "line-chart",
+    "name": "선 차트",
+    "category": "데이터·숫자",
+    "tags": [
+      "차트",
+      "선",
+      "추이",
+      "변화"
+    ],
+    "description": "시간에 따른 변화를 꺾은선으로 보여 준다",
+    "promptText": "선 차트: 위에 제목, 옅은 가로 눈금선 위에 꺾은선 1개(포인트 색)와 점 6개, 마지막 점 옆에 값 라벨 배지",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"line","x1":1.4,"y1":2.6,"x2":11.1,"y2":2.6,"stroke":"border","width":0.05,"dash":true},
+      {"type":"line","x1":1.4,"y1":3.6,"x2":11.1,"y2":3.6,"stroke":"border","width":0.05,"dash":true},
+      {"type":"line","x1":1.4,"y1":4.6,"x2":11.1,"y2":4.6,"stroke":"border","width":0.05,"dash":true},
+      {"type":"line","x1":1.4,"y1":1.6,"x2":1.4,"y2":5.6,"stroke":"text","width":0.04,"opacity":0.5},
+      {"type":"line","x1":1.4,"y1":5.6,"x2":11.1,"y2":5.6,"stroke":"text","width":0.04,"opacity":0.5},
+      {"type":"line","x1":1.9,"y1":4.7,"x2":3.6,"y2":4,"stroke":"accent","width":0.09},
+      {"type":"line","x1":3.6,"y1":4,"x2":5.3,"y2":4.3,"stroke":"accent","width":0.09},
+      {"type":"line","x1":5.3,"y1":4.3,"x2":7,"y2":3.1,"stroke":"accent","width":0.09},
+      {"type":"line","x1":7,"y1":3.1,"x2":8.7,"y2":2.7,"stroke":"accent","width":0.09},
+      {"type":"line","x1":8.7,"y1":2.7,"x2":10.4,"y2":1.9,"stroke":"accent","width":0.09},
+      {"type":"circle","cx":1.9,"cy":4.7,"r":0.15,"fill":"accent"},
+      {"type":"circle","cx":3.6,"cy":4,"r":0.15,"fill":"accent"},
+      {"type":"circle","cx":5.3,"cy":4.3,"r":0.15,"fill":"accent"},
+      {"type":"circle","cx":7,"cy":3.1,"r":0.15,"fill":"accent"},
+      {"type":"circle","cx":8.7,"cy":2.7,"r":0.15,"fill":"accent"},
+      {"type":"circle","cx":10.4,"cy":1.9,"r":0.15,"fill":"accent"},
+      {"type":"rect","x":9.75,"y":1.15,"w":1.3,"h":0.45,"fill":"accent","radius":0.1}
+    ]
+  },
+  {
+    "id": "pie-chart",
+    "name": "원형 차트",
+    "category": "데이터·숫자",
+    "tags": [
+      "차트",
+      "원형",
+      "도넛",
+      "비율"
+    ],
+    "description": "전체에서 각 항목이 차지하는 비율을 도넛 모양으로 보여 준다",
+    "promptText": "원형 차트: 위에 제목, 왼쪽에 3조각 도넛 차트(가장 큰 조각이 포인트 색, 가운데에 합계 숫자), 오른쪽에 색 네모 + 항목 이름 + 비율로 된 범례 3줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"circle","cx":3.9,"cy":3.8,"r":1.55,"fill":"none","stroke":"border","width":0.75},
+      {"type":"circle","cx":3.9,"cy":3.8,"r":1.55,"fill":"none","stroke":"accent","width":0.75,"arc":0.52,"start":0},
+      {"type":"circle","cx":3.9,"cy":3.8,"r":1.55,"fill":"none","stroke":"accent2","width":0.75,"arc":0.28,"start":0.52},
+      {"type":"textLines","x":3.4,"y":3.65,"w":1,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":7,"y":2.5,"w":0.4,"h":0.4,"fill":"accent","radius":0.06},
+      {"type":"textLines","x":7.7,"y":2.6,"w":2.2,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":10.3,"y":2.6,"w":0.8,"lines":1,"size":0.17,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7,"y":3.53,"w":0.4,"h":0.4,"fill":"accent2","radius":0.06},
+      {"type":"textLines","x":7.7,"y":3.63,"w":1.9,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":10.3,"y":3.63,"w":0.8,"lines":1,"size":0.17,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7,"y":4.57,"w":0.4,"h":0.4,"fill":"border","radius":0.06},
+      {"type":"textLines","x":7.7,"y":4.67,"w":1.6,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":10.3,"y":4.67,"w":0.8,"lines":1,"size":0.17,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "table",
+    "name": "비교표",
+    "category": "데이터·숫자",
+    "tags": [
+      "표",
+      "비교",
+      "행열",
+      "테이블"
+    ],
+    "description": "여러 항목을 행과 열로 정리해 꼼꼼히 비교한다",
+    "promptText": "비교표: 헤더 행을 강조한 깔끔한 표",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.6,"w":10.2,"h":0.75,"fill":"accent","radius":0.08},
+      {"type":"textLines","x":1.2,"y":1.88,"w":1.31,"lines":1,"size":0.17,"fill":"bg"},
+      {"type":"textLines","x":3.68,"y":1.88,"w":1.31,"lines":1,"size":0.17,"fill":"bg"},
+      {"type":"textLines","x":6.15,"y":1.88,"w":1.31,"lines":1,"size":0.17,"fill":"bg"},
+      {"type":"textLines","x":8.62,"y":1.88,"w":1.31,"lines":1,"size":0.17,"fill":"bg"},
+      {"type":"textLines","x":1.2,"y":2.74,"w":1.63,"lines":1,"size":0.14,"fill":"text","opacity":0.8},
+      {"type":"textLines","x":3.68,"y":2.74,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"textLines","x":6.15,"y":2.74,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"textLines","x":8.62,"y":2.74,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"line","x1":0.9,"y1":3.26,"x2":11.1,"y2":3.26,"stroke":"border","width":0.05,"opacity":1},
+      {"type":"textLines","x":1.2,"y":3.65,"w":1.63,"lines":1,"size":0.14,"fill":"text","opacity":0.8},
+      {"type":"textLines","x":3.68,"y":3.65,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"textLines","x":6.15,"y":3.65,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"textLines","x":8.62,"y":3.65,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"line","x1":0.9,"y1":4.18,"x2":11.1,"y2":4.18,"stroke":"border","width":0.05,"opacity":1},
+      {"type":"textLines","x":1.2,"y":4.56,"w":1.63,"lines":1,"size":0.14,"fill":"text","opacity":0.8},
+      {"type":"textLines","x":3.68,"y":4.56,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"textLines","x":6.15,"y":4.56,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"textLines","x":8.62,"y":4.56,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"line","x1":0.9,"y1":5.09,"x2":11.1,"y2":5.09,"stroke":"border","width":0.05,"opacity":1},
+      {"type":"textLines","x":1.2,"y":5.47,"w":1.63,"lines":1,"size":0.14,"fill":"text","opacity":0.8},
+      {"type":"textLines","x":3.68,"y":5.47,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"textLines","x":6.15,"y":5.47,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"textLines","x":8.62,"y":5.47,"w":0.98,"lines":1,"size":0.14,"fill":"text","opacity":0.45},
+      {"type":"line","x1":0.9,"y1":6,"x2":11.1,"y2":6,"stroke":"border","width":0.05,"opacity":0}
+    ]
+  },
+  {
+    "id": "progress",
+    "name": "진행률 막대",
+    "category": "데이터·숫자",
+    "tags": [
+      "진행률",
+      "퍼센트",
+      "달성도",
+      "막대"
+    ],
+    "description": "목표 대비 얼마나 왔는지 가로 막대로 보여 준다",
+    "promptText": "진행률 막대: 위에 제목, 4개 항목을 세로로 나열, 각 항목은 이름 + 오른쪽 끝 퍼센트 숫자 + 그 아래 옅은 바탕 막대 위에 달성한 만큼만 포인트 색으로 채운 가로 막대",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":1.7,"w":2.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":10.4,"y":1.7,"w":0.7,"lines":1,"size":0.16,"fill":"accent"},
+      {"type":"rect","x":0.9,"y":2.08,"w":10.2,"h":0.28,"fill":"border","radius":0.14},
+      {"type":"rect","x":0.9,"y":2.08,"w":8.2,"h":0.28,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":0.9,"y":2.84,"w":1.9,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":10.4,"y":2.84,"w":0.7,"lines":1,"size":0.16,"fill":"accent"},
+      {"type":"rect","x":0.9,"y":3.22,"w":10.2,"h":0.28,"fill":"border","radius":0.14},
+      {"type":"rect","x":0.9,"y":3.22,"w":6.1,"h":0.28,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":0.9,"y":3.98,"w":2.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":10.4,"y":3.98,"w":0.7,"lines":1,"size":0.16,"fill":"accent"},
+      {"type":"rect","x":0.9,"y":4.36,"w":10.2,"h":0.28,"fill":"border","radius":0.14},
+      {"type":"rect","x":0.9,"y":4.36,"w":9.3,"h":0.28,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":0.9,"y":5.11,"w":1.9,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":10.4,"y":5.11,"w":0.7,"lines":1,"size":0.16,"fill":"accent"},
+      {"type":"rect","x":0.9,"y":5.49,"w":10.2,"h":0.28,"fill":"border","radius":0.14},
+      {"type":"rect","x":0.9,"y":5.49,"w":3.9,"h":0.28,"fill":"accent","radius":0.14}
+    ]
+  },
+  {
+    "id": "kpi-cards",
+    "name": "KPI 카드",
+    "category": "데이터·숫자",
+    "tags": [
+      "KPI",
+      "지표",
+      "카드",
+      "대시보드"
+    ],
+    "description": "핵심 지표 네 개를 카드로 정리해 현황판처럼 보여 준다",
+    "promptText": "KPI 카드: 위에 제목, 가로로 카드 4장, 각 카드에 작은 지표 이름·큰 숫자·증감 배지·작은 추세선(스파크라인)",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.9,"w":2.32,"h":3.6,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.18,"y":2.25,"w":1.05,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.18,"y":2.75,"w":1.39,"lines":1,"size":0.5,"fill":"text"},
+      {"type":"rect","x":1.18,"y":3.6,"w":0.8,"h":0.3,"fill":"accent","radius":0.15},
+      {"type":"line","x1":1.18,"y1":4.95,"x2":1.83,"y2":4.6,"stroke":"accent","width":0.06},
+      {"type":"line","x1":1.83,"y1":4.6,"x2":2.34,"y2":4.8,"stroke":"accent","width":0.06},
+      {"type":"line","x1":2.34,"y1":4.8,"x2":2.94,"y2":4.3,"stroke":"accent","width":0.06},
+      {"type":"rect","x":3.52,"y":1.9,"w":2.32,"h":3.6,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":3.81,"y":2.25,"w":1.05,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":3.81,"y":2.75,"w":1.39,"lines":1,"size":0.5,"fill":"text"},
+      {"type":"rect","x":3.81,"y":3.6,"w":0.8,"h":0.3,"fill":"accent","radius":0.15},
+      {"type":"line","x1":3.81,"y1":4.95,"x2":4.45,"y2":4.6,"stroke":"accent","width":0.06},
+      {"type":"line","x1":4.45,"y1":4.6,"x2":4.97,"y2":4.8,"stroke":"accent","width":0.06},
+      {"type":"line","x1":4.97,"y1":4.8,"x2":5.57,"y2":4.3,"stroke":"accent","width":0.06},
+      {"type":"rect","x":6.15,"y":1.9,"w":2.32,"h":3.6,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.43,"y":2.25,"w":1.05,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":6.43,"y":2.75,"w":1.39,"lines":1,"size":0.5,"fill":"text"},
+      {"type":"rect","x":6.43,"y":3.6,"w":0.8,"h":0.3,"fill":"accent2","radius":0.15},
+      {"type":"line","x1":6.43,"y1":4.95,"x2":7.08,"y2":4.6,"stroke":"accent","width":0.06},
+      {"type":"line","x1":7.08,"y1":4.6,"x2":7.59,"y2":4.8,"stroke":"accent","width":0.06},
+      {"type":"line","x1":7.59,"y1":4.8,"x2":8.2,"y2":4.3,"stroke":"accent","width":0.06},
+      {"type":"rect","x":8.77,"y":1.9,"w":2.32,"h":3.6,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":9.05,"y":2.25,"w":1.05,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":9.05,"y":2.75,"w":1.39,"lines":1,"size":0.5,"fill":"text"},
+      {"type":"rect","x":9.05,"y":3.6,"w":0.8,"h":0.3,"fill":"accent","radius":0.15},
+      {"type":"line","x1":9.05,"y1":4.95,"x2":9.7,"y2":4.6,"stroke":"accent","width":0.06},
+      {"type":"line","x1":9.7,"y1":4.6,"x2":10.22,"y2":4.8,"stroke":"accent","width":0.06},
+      {"type":"line","x1":10.22,"y1":4.8,"x2":10.82,"y2":4.3,"stroke":"accent","width":0.06}
+    ]
+  },
+  {
+    "id": "before-after",
+    "name": "전후 비교",
+    "category": "데이터·숫자",
+    "tags": [
+      "전후",
+      "비포 애프터",
+      "변화",
+      "개선"
+    ],
+    "description": "바뀌기 전과 후의 수치를 나란히 놓아 변화를 강조한다",
+    "promptText": "전후 비교: 위에 제목, 왼쪽 \"이전\" 패널(옅은 면, 회색 숫자)과 오른쪽 \"이후\" 패널(포인트 색 테두리, 포인트 색 큰 숫자)을 나란히, 두 패널 사이에 오른쪽을 향한 화살표",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":4.4,"h":4.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.3,"y":2.1,"w":1,"lines":1,"size":0.14,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.3,"y":3,"w":2.4,"lines":1,"size":0.7,"fill":"text","opacity":0.35},
+      {"type":"textLines","x":1.3,"y":4.3,"w":3.4,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":5.55,"y1":3.75,"x2":6.45,"y2":3.75,"stroke":"accent","width":0.1},
+      {"type":"rect","x":6.7,"y":1.7,"w":4.4,"h":4.1,"fill":"bg","radius":0.14,"stroke":"accent"},
+      {"type":"textLines","x":7.1,"y":2.1,"w":1,"lines":1,"size":0.14,"fill":"accent"},
+      {"type":"textLines","x":7.1,"y":3,"w":2.9,"lines":1,"size":0.7,"fill":"accent"},
+      {"type":"textLines","x":7.1,"y":4.3,"w":3.4,"lines":2,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "bar-horizontal",
+    "name": "가로 막대 순위",
+    "category": "데이터·숫자",
+    "tags": [
+      "차트",
+      "가로 막대",
+      "순위",
+      "랭킹"
+    ],
+    "description": "항목을 큰 순서대로 가로 막대로 줄 세운다",
+    "promptText": "가로 막대 순위: 위에 제목, 5개 항목을 값이 큰 순서로 세로 나열, 각 줄은 왼쪽 항목 이름 + 길이가 값에 비례하는 가로 막대 + 막대 끝 숫자, 1위 막대만 포인트 색",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":1.92,"w":1.6,"lines":1,"size":0.15,"fill":"text","opacity":0.7},
+      {"type":"rect","x":2.9,"y":1.7,"w":7.4,"h":0.6,"fill":"accent","radius":0.08},
+      {"type":"textLines","x":10.5,"y":1.92,"w":0.6,"lines":1,"size":0.15,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":0.9,"y":2.82,"w":1.3,"lines":1,"size":0.15,"fill":"text","opacity":0.7},
+      {"type":"rect","x":2.9,"y":2.6,"w":6,"h":0.6,"fill":"accent2","radius":0.08},
+      {"type":"textLines","x":9.1,"y":2.82,"w":0.6,"lines":1,"size":0.15,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":0.9,"y":3.72,"w":1.6,"lines":1,"size":0.15,"fill":"text","opacity":0.7},
+      {"type":"rect","x":2.9,"y":3.5,"w":4.9,"h":0.6,"fill":"accent2","radius":0.08},
+      {"type":"textLines","x":8,"y":3.72,"w":0.6,"lines":1,"size":0.15,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":0.9,"y":4.62,"w":1.3,"lines":1,"size":0.15,"fill":"text","opacity":0.7},
+      {"type":"rect","x":2.9,"y":4.4,"w":3.5,"h":0.6,"fill":"accent2","radius":0.08},
+      {"type":"textLines","x":6.6,"y":4.62,"w":0.6,"lines":1,"size":0.15,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":0.9,"y":5.52,"w":1.6,"lines":1,"size":0.15,"fill":"text","opacity":0.7},
+      {"type":"rect","x":2.9,"y":5.3,"w":2.2,"h":0.6,"fill":"accent2","radius":0.08},
+      {"type":"textLines","x":5.3,"y":5.52,"w":0.6,"lines":1,"size":0.15,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "chart-text",
+    "name": "차트 + 해설",
+    "category": "데이터·숫자",
+    "tags": [
+      "차트",
+      "해설",
+      "분석",
+      "좌우"
+    ],
+    "description": "왼쪽에 차트, 오른쪽에 그 차트가 말해 주는 내용을 적는다",
+    "promptText": "차트와 해설: 왼쪽 60%에 세로 막대 차트(막대 5개), 오른쪽 40%에 포인트 색 핵심 수치 한 줄과 해설 제목, 불릿 3줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"line","x1":1.3,"y1":1.7,"x2":1.3,"y2":5.6,"stroke":"text","width":0.04,"opacity":0.5},
+      {"type":"line","x1":1.3,"y1":5.6,"x2":6.9,"y2":5.6,"stroke":"text","width":0.04,"opacity":0.5},
+      {"type":"rect","x":1.7,"y":4.2,"w":0.7,"h":1.4,"fill":"accent2","radius":0.06},
+      {"type":"rect","x":2.72,"y":3.4,"w":0.7,"h":2.2,"fill":"accent2","radius":0.06},
+      {"type":"rect","x":3.74,"y":3.8,"w":0.7,"h":1.8,"fill":"accent2","radius":0.06},
+      {"type":"rect","x":4.76,"y":2.7,"w":0.7,"h":2.9,"fill":"accent2","radius":0.06},
+      {"type":"rect","x":5.78,"y":2.1,"w":0.7,"h":3.5,"fill":"accent","radius":0.06},
+      {"type":"textLines","x":7.7,"y":1.8,"w":2.2,"lines":1,"size":0.55,"fill":"accent"},
+      {"type":"textLines","x":7.7,"y":2.75,"w":3,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"circle","cx":7.8,"cy":3.55,"r":0.08,"fill":"accent"},
+      {"type":"textLines","x":8.1,"y":3.48,"w":2.9,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":7.8,"cy":4.32,"r":0.08,"fill":"accent"},
+      {"type":"textLines","x":8.1,"y":4.25,"w":2.9,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":7.8,"cy":5.08,"r":0.08,"fill":"accent"},
+      {"type":"textLines","x":8.1,"y":5.01,"w":2.9,"lines":1,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "stat-rings",
+    "name": "원형 진행률 3개",
+    "category": "데이터·숫자",
+    "tags": [
+      "원형",
+      "진행률",
+      "링",
+      "퍼센트"
+    ],
+    "description": "세 가지 달성률을 동그란 링으로 나란히 보여 준다",
+    "promptText": "원형 진행률 3개: 위에 제목, 가로로 원형 링 3개, 각 링은 달성한 만큼만 포인트 색으로 채우고 가운데에 퍼센트 숫자, 링 아래에 가운데 정렬 항목 이름",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"circle","cx":2.4,"cy":3.35,"r":1.1,"fill":"none","stroke":"border","width":0.3},
+      {"type":"circle","cx":2.4,"cy":3.35,"r":1.1,"fill":"none","stroke":"accent","width":0.3,"arc":0.78,"start":0},
+      {"type":"textLines","x":1.95,"y":3.2,"w":0.9,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":1.6,"y":5.05,"w":1.6,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":1.85,"y":5.45,"w":1.1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":6,"cy":3.35,"r":1.1,"fill":"none","stroke":"border","width":0.3},
+      {"type":"circle","cx":6,"cy":3.35,"r":1.1,"fill":"none","stroke":"accent","width":0.3,"arc":0.55,"start":0},
+      {"type":"textLines","x":5.55,"y":3.2,"w":0.9,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":5.2,"y":5.05,"w":1.6,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":5.45,"y":5.45,"w":1.1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":9.6,"cy":3.35,"r":1.1,"fill":"none","stroke":"border","width":0.3},
+      {"type":"circle","cx":9.6,"cy":3.35,"r":1.1,"fill":"none","stroke":"accent","width":0.3,"arc":0.9,"start":0},
+      {"type":"textLines","x":9.15,"y":3.2,"w":0.9,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":8.8,"y":5.05,"w":1.6,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":9.05,"y":5.45,"w":1.1,"lines":1,"size":0.1,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "process",
+    "name": "프로세스 단계",
+    "category": "프로세스·흐름",
+    "tags": [
+      "프로세스",
+      "단계",
+      "화살표",
+      "절차"
+    ],
+    "description": "일이 진행되는 순서를 화살표로 이어진 상자로 보여 준다",
+    "promptText": "프로세스: 화살표로 이어진 단계 박스",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":2.5,"w":2.03,"h":2.1,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":1.15,"y":2.85,"w":0.5,"lines":1,"size":0.2,"fill":"bg"},
+      {"type":"textLines","x":1.15,"y":3.45,"w":1.13,"lines":1,"size":0.16,"fill":"bg"},
+      {"type":"textLines","x":1.15,"y":3.9,"w":1.42,"lines":1,"size":0.1,"fill":"bg","opacity":0.5},
+      {"type":"arrow","x1":3.05,"y1":3.55,"x2":3.51,"y2":3.55,"stroke":"accent","width":0.07},
+      {"type":"rect","x":3.62,"y":2.5,"w":2.03,"h":2.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":3.87,"y":2.85,"w":0.5,"lines":1,"size":0.2,"fill":"accent"},
+      {"type":"textLines","x":3.87,"y":3.45,"w":1.13,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":3.87,"y":3.9,"w":1.42,"lines":1,"size":0.1,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":5.77,"y1":3.55,"x2":6.23,"y2":3.55,"stroke":"accent","width":0.07},
+      {"type":"rect","x":6.35,"y":2.5,"w":2.03,"h":2.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.6,"y":2.85,"w":0.5,"lines":1,"size":0.2,"fill":"accent"},
+      {"type":"textLines","x":6.6,"y":3.45,"w":1.13,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":6.6,"y":3.9,"w":1.42,"lines":1,"size":0.1,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":8.49,"y1":3.55,"x2":8.96,"y2":3.55,"stroke":"accent","width":0.07},
+      {"type":"rect","x":9.07,"y":2.5,"w":2.03,"h":2.1,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":9.32,"y":2.85,"w":0.5,"lines":1,"size":0.2,"fill":"accent"},
+      {"type":"textLines","x":9.32,"y":3.45,"w":1.13,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":9.32,"y":3.9,"w":1.42,"lines":1,"size":0.1,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "process-vertical",
+    "name": "세로 단계",
+    "category": "프로세스·흐름",
+    "tags": [
+      "프로세스",
+      "세로",
+      "단계",
+      "순서"
+    ],
+    "description": "단계를 위에서 아래로 내려가며 설명한다",
+    "promptText": "세로 단계: 위에 제목, 왼쪽에 세로선으로 이어진 번호 원 4개, 각 원 오른쪽에 단계 이름과 한 줄 설명을 담은 가로로 긴 상자",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"line","x1":1.4,"y1":2,"x2":1.4,"y2":5.6,"stroke":"accent","width":0.06},
+      {"type":"circle","cx":1.4,"cy":2.08,"r":0.32,"fill":"accent"},
+      {"type":"rect","x":2.2,"y":1.6,"w":8.9,"h":0.95,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":2.55,"y":1.8,"w":2.4,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":2.55,"y":2.18,"w":6.5,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":1.4,"cy":3.23,"r":0.32,"fill":"accent"},
+      {"type":"rect","x":2.2,"y":2.75,"w":8.9,"h":0.95,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":2.55,"y":2.95,"w":2.4,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":2.55,"y":3.33,"w":6.5,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":1.4,"cy":4.38,"r":0.32,"fill":"accent"},
+      {"type":"rect","x":2.2,"y":3.9,"w":8.9,"h":0.95,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":2.55,"y":4.1,"w":2.4,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":2.55,"y":4.47,"w":6.5,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":1.4,"cy":5.53,"r":0.32,"fill":"accent"},
+      {"type":"rect","x":2.2,"y":5.05,"w":8.9,"h":0.95,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":2.55,"y":5.25,"w":2.4,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":2.55,"y":5.63,"w":6.5,"lines":1,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "arrow-flow",
+    "name": "원형 노드 흐름",
+    "category": "프로세스·흐름",
+    "tags": [
+      "흐름",
+      "노드",
+      "화살표",
+      "5단계"
+    ],
+    "description": "동그란 단계 다섯 개를 화살표로 이어 흐름을 보여 준다",
+    "promptText": "원형 노드 흐름: 위에 제목, 가로로 원 5개를 화살표로 연결, 현재 단계 원만 포인트 색으로 채우고 나머지는 테두리만, 각 원 아래에 단계 이름과 짧은 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"circle","cx":1.84,"cy":3,"r":0.55,"fill":"surface","stroke":"accent","width":0.06},
+      {"type":"textLines","x":1.24,"y":4,"w":1.2,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":1.39,"y":4.35,"w":0.9,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"arrow","x1":2.54,"y1":3,"x2":3.22,"y2":3,"stroke":"accent","width":0.07},
+      {"type":"circle","cx":3.92,"cy":3,"r":0.55,"fill":"accent"},
+      {"type":"textLines","x":3.32,"y":4,"w":1.2,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":3.47,"y":4.35,"w":0.9,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"arrow","x1":4.62,"y1":3,"x2":5.3,"y2":3,"stroke":"accent","width":0.07},
+      {"type":"circle","cx":6,"cy":3,"r":0.55,"fill":"surface","stroke":"accent","width":0.06},
+      {"type":"textLines","x":5.4,"y":4,"w":1.2,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":5.55,"y":4.35,"w":0.9,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"arrow","x1":6.7,"y1":3,"x2":7.38,"y2":3,"stroke":"accent","width":0.07},
+      {"type":"circle","cx":8.08,"cy":3,"r":0.55,"fill":"surface","stroke":"accent","width":0.06},
+      {"type":"textLines","x":7.48,"y":4,"w":1.2,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":7.63,"y":4.35,"w":0.9,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"arrow","x1":8.78,"y1":3,"x2":9.46,"y2":3,"stroke":"accent","width":0.07},
+      {"type":"circle","cx":10.16,"cy":3,"r":0.55,"fill":"surface","stroke":"accent","width":0.06},
+      {"type":"textLines","x":9.56,"y":4,"w":1.2,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":9.71,"y":4.35,"w":0.9,"lines":1,"size":0.09,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "cycle",
+    "name": "순환",
+    "category": "프로세스·흐름",
+    "tags": [
+      "순환",
+      "사이클",
+      "반복",
+      "고리"
+    ],
+    "description": "끝나면 다시 처음으로 돌아가는 반복 과정을 고리로 보여 준다",
+    "promptText": "순환: 가운데 주제 원을 중심으로 위·오른쪽·아래·왼쪽에 단계 원 4개를 놓고 시계 방향 화살표로 이어 고리를 만듦, 각 단계 원 옆에 이름",
+    "source": "generated",
+    "shapes": [
+      {"type":"circle","cx":6,"cy":3.38,"r":0.8,"fill":"surface"},
+      {"type":"textLines","x":5.5,"y":3.3,"w":1,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"circle","cx":6,"cy":1.25,"r":0.55,"fill":"accent"},
+      {"type":"circle","cx":8.6,"cy":3.38,"r":0.55,"fill":"accent2"},
+      {"type":"circle","cx":6,"cy":5.5,"r":0.55,"fill":"accent"},
+      {"type":"circle","cx":3.4,"cy":3.38,"r":0.55,"fill":"accent2"},
+      {"type":"arrow","x1":6.75,"y1":1.55,"x2":8.2,"y2":2.75,"stroke":"accent","width":0.07},
+      {"type":"arrow","x1":8.2,"y1":4,"x2":6.75,"y2":5.2,"stroke":"accent","width":0.07},
+      {"type":"arrow","x1":5.25,"y1":5.2,"x2":3.8,"y2":4,"stroke":"accent","width":0.07},
+      {"type":"arrow","x1":3.8,"y1":2.75,"x2":5.25,"y2":1.55,"stroke":"accent","width":0.07},
+      {"type":"textLines","x":6.8,"y":0.95,"w":1.4,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":9.4,"y":3.3,"w":1.4,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":6.8,"y":5.75,"w":1.4,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":1.2,"y":3.3,"w":1.4,"lines":1,"size":0.14,"fill":"text"}
+    ]
+  },
+  {
+    "id": "funnel",
+    "name": "깔때기",
+    "category": "프로세스·흐름",
+    "tags": [
+      "깔때기",
+      "퍼널",
+      "전환",
+      "단계별 감소"
+    ],
+    "description": "단계를 거칠수록 수가 줄어드는 과정을 깔때기로 보여 준다",
+    "promptText": "깔때기: 위에 제목, 왼쪽에 아래로 갈수록 좁아지는 가로 띠 4단(위가 가장 넓고 진함), 각 띠 오른쪽에 단계 이름과 숫자",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":6.4,"h":0.96,"fill":"accent","radius":0.08,"opacity":1},
+      {"type":"textLines","x":8,"y":1.98,"w":1.7,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":8,"y":2.3,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":7.45,"y1":2.18,"x2":7.8,"y2":2.18,"stroke":"border","width":0.05,"dash":true},
+      {"type":"rect","x":1.55,"y":2.78,"w":5.1,"h":0.96,"fill":"accent","radius":0.08,"opacity":0.8},
+      {"type":"textLines","x":8,"y":3.06,"w":1.7,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":8,"y":3.38,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":6.8,"y1":3.26,"x2":7.8,"y2":3.26,"stroke":"border","width":0.05,"dash":true},
+      {"type":"rect","x":2.2,"y":3.86,"w":3.8,"h":0.96,"fill":"accent","radius":0.08,"opacity":0.6},
+      {"type":"textLines","x":8,"y":4.14,"w":1.7,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":8,"y":4.46,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":6.15,"y1":4.34,"x2":7.8,"y2":4.34,"stroke":"border","width":0.05,"dash":true},
+      {"type":"rect","x":2.85,"y":4.94,"w":2.5,"h":0.96,"fill":"accent","radius":0.08,"opacity":0.4},
+      {"type":"textLines","x":8,"y":5.22,"w":1.7,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":8,"y":5.54,"w":1,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":5.5,"y1":5.42,"x2":7.8,"y2":5.42,"stroke":"border","width":0.05,"dash":true}
+    ]
+  },
+  {
+    "id": "stairs",
+    "name": "계단",
+    "category": "프로세스·흐름",
+    "tags": [
+      "계단",
+      "성장",
+      "단계 상승",
+      "레벨"
+    ],
+    "description": "한 단계씩 올라가는 성장 과정을 계단으로 보여 준다",
+    "promptText": "계단: 위에 제목, 왼쪽에서 오른쪽으로 갈수록 높아지는 계단 4칸(마지막 칸만 포인트 색), 각 칸 위에 단계 이름과 한 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":5,"w":2.46,"h":1,"fill":"surface","radius":0.08},
+      {"type":"textLines","x":1,"y":4.25,"w":1.35,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":1,"y":4.6,"w":1.85,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"rect","x":3.48,"y":4.15,"w":2.46,"h":1.85,"fill":"surface","radius":0.08},
+      {"type":"textLines","x":3.58,"y":3.4,"w":1.35,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":3.58,"y":3.75,"w":1.85,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"rect","x":6.06,"y":3.3,"w":2.46,"h":2.7,"fill":"surface","radius":0.08},
+      {"type":"textLines","x":6.16,"y":2.55,"w":1.35,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":6.16,"y":2.9,"w":1.85,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"rect","x":8.64,"y":2.45,"w":2.46,"h":3.55,"fill":"accent","radius":0.08},
+      {"type":"textLines","x":8.74,"y":1.7,"w":1.35,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":8.74,"y":2.05,"w":1.85,"lines":1,"size":0.1,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "branch",
+    "name": "분기",
+    "category": "프로세스·흐름",
+    "tags": [
+      "분기",
+      "갈래",
+      "선택지",
+      "경우"
+    ],
+    "description": "하나의 출발점에서 여러 갈래로 나뉘는 경우를 보여 준다",
+    "promptText": "분기: 위에 제목, 왼쪽에 출발 상자 1개(포인트 색), 거기서 화살표 3개가 갈라져 오른쪽에 세로로 놓인 결과 상자 3개로 이어짐, 각 결과 상자에 이름과 한 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":3,"w":2.8,"h":1.5,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":1.25,"y":3.6,"w":1.8,"lines":1,"size":0.2,"fill":"bg"},
+      {"type":"arrow","x1":3.85,"y1":3.75,"x2":6,"y2":2.25,"stroke":"accent","width":0.07},
+      {"type":"rect","x":6.2,"y":1.65,"w":4.9,"h":1.2,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.55,"y":1.98,"w":2,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.55,"y":2.35,"w":3.8,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":3.85,"y1":3.75,"x2":6,"y2":3.75,"stroke":"accent","width":0.07},
+      {"type":"rect","x":6.2,"y":3.15,"w":4.9,"h":1.2,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.55,"y":3.48,"w":2,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.55,"y":3.85,"w":3.8,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":3.85,"y1":3.75,"x2":6,"y2":5.25,"stroke":"accent","width":0.07},
+      {"type":"rect","x":6.2,"y":4.65,"w":4.9,"h":1.2,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.55,"y":4.98,"w":2,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.55,"y":5.35,"w":3.8,"lines":1,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "checklist",
+    "name": "체크리스트",
+    "category": "프로세스·흐름",
+    "tags": [
+      "체크리스트",
+      "확인",
+      "할 일",
+      "점검"
+    ],
+    "description": "확인하거나 준비할 일을 체크 상자와 함께 나열한다",
+    "promptText": "체크리스트: 위에 제목, 체크 상자 + 한 줄 항목 5개를 세로로 나열, 완료된 위 3개는 포인트 색으로 채운 체크 상자, 나머지 2개는 빈 상자",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.77,"w":0.5,"h":0.5,"fill":"accent","radius":0.1},
+      {"type":"textLines","x":1.75,"y":1.93,"w":6.5,"lines":1,"size":0.18,"fill":"text","opacity":0.8},
+      {"type":"line","x1":0.9,"y1":2.46,"x2":11.1,"y2":2.46,"stroke":"border","width":0.05,"opacity":1},
+      {"type":"rect","x":0.9,"y":2.66,"w":0.5,"h":0.5,"fill":"accent","radius":0.1},
+      {"type":"textLines","x":1.75,"y":2.82,"w":5.4,"lines":1,"size":0.18,"fill":"text","opacity":0.8},
+      {"type":"line","x1":0.9,"y1":3.35,"x2":11.1,"y2":3.35,"stroke":"border","width":0.05,"opacity":1},
+      {"type":"rect","x":0.9,"y":3.55,"w":0.5,"h":0.5,"fill":"accent","radius":0.1},
+      {"type":"textLines","x":1.75,"y":3.71,"w":4.3,"lines":1,"size":0.18,"fill":"text","opacity":0.8},
+      {"type":"line","x1":0.9,"y1":4.24,"x2":11.1,"y2":4.24,"stroke":"border","width":0.05,"opacity":1},
+      {"type":"rect","x":0.9,"y":4.44,"w":0.5,"h":0.5,"fill":"bg","radius":0.1,"stroke":"text"},
+      {"type":"textLines","x":1.75,"y":4.6,"w":6.5,"lines":1,"size":0.18,"fill":"text","opacity":0.5},
+      {"type":"line","x1":0.9,"y1":5.13,"x2":11.1,"y2":5.13,"stroke":"border","width":0.05,"opacity":1},
+      {"type":"rect","x":0.9,"y":5.33,"w":0.5,"h":0.5,"fill":"bg","radius":0.1,"stroke":"text"},
+      {"type":"textLines","x":1.75,"y":5.49,"w":5.4,"lines":1,"size":0.18,"fill":"text","opacity":0.5},
+      {"type":"line","x1":0.9,"y1":6.02,"x2":11.1,"y2":6.02,"stroke":"border","width":0.05,"opacity":0}
+    ]
+  },
+  {
+    "id": "process-3big",
+    "name": "3단계 큰 카드",
+    "category": "프로세스·흐름",
+    "tags": [
+      "3단계",
+      "카드",
+      "화살표",
+      "절차"
+    ],
+    "description": "세 단계를 큼직한 카드로 자세히 설명한다",
+    "promptText": "3단계 큰 카드: 위에 제목, 세로로 긴 큰 카드 3장을 화살표로 연결, 각 카드 위쪽에 번호 원, 그 아래 단계 이름과 설명 3줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.7,"w":2.87,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":1.55,"cy":2.35,"r":0.35,"fill":"accent"},
+      {"type":"textLines","x":1.2,"y":3.15,"w":1.58,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":1.2,"y":3.65,"w":2.27,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":3.92,"y1":3.8,"x2":4.42,"y2":3.8,"stroke":"accent","width":0.07},
+      {"type":"rect","x":4.57,"y":1.7,"w":2.87,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":5.22,"cy":2.35,"r":0.35,"fill":"accent"},
+      {"type":"textLines","x":4.87,"y":3.15,"w":1.58,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":4.87,"y":3.65,"w":2.27,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"arrow","x1":7.58,"y1":3.8,"x2":8.08,"y2":3.8,"stroke":"accent","width":0.07},
+      {"type":"rect","x":8.23,"y":1.7,"w":2.87,"h":4.2,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":8.88,"cy":2.35,"r":0.35,"fill":"accent"},
+      {"type":"textLines","x":8.53,"y":3.15,"w":1.58,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":8.53,"y":3.65,"w":2.27,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "timeline",
+    "name": "타임라인",
+    "category": "타임라인·로드맵",
+    "tags": [
+      "타임라인",
+      "가로",
+      "연표",
+      "5단계"
+    ],
+    "description": "시간 순서대로 일어난 일을 가로선 위에 늘어놓는다",
+    "promptText": "타임라인: 가로 흐름 5단계, 단계별 라벨",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"line","x1":0.9,"y1":3.3,"x2":11.1,"y2":3.3,"stroke":"accent","width":0.07},
+      {"type":"circle","cx":1.84,"cy":3.3,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":1.44,"y":2.55,"w":0.8,"lines":1,"size":0.13,"fill":"accent"},
+      {"type":"textLines","x":1.19,"y":3.95,"w":1.3,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":1.34,"y":4.3,"w":1,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":3.92,"cy":3.3,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":3.52,"y":2.55,"w":0.8,"lines":1,"size":0.13,"fill":"accent"},
+      {"type":"textLines","x":3.27,"y":3.95,"w":1.3,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":3.42,"y":4.3,"w":1,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":6,"cy":3.3,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":5.6,"y":2.55,"w":0.8,"lines":1,"size":0.13,"fill":"accent"},
+      {"type":"textLines","x":5.35,"y":3.95,"w":1.3,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":5.5,"y":4.3,"w":1,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":8.08,"cy":3.3,"r":0.24,"fill":"accent"},
+      {"type":"textLines","x":7.68,"y":2.55,"w":0.8,"lines":1,"size":0.13,"fill":"accent"},
+      {"type":"textLines","x":7.43,"y":3.95,"w":1.3,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":7.58,"y":4.3,"w":1,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"circle","cx":10.16,"cy":3.3,"r":0.24,"fill":"bg","stroke":"accent","width":0.08},
+      {"type":"textLines","x":9.76,"y":2.55,"w":0.8,"lines":1,"size":0.13,"fill":"accent"},
+      {"type":"textLines","x":9.51,"y":3.95,"w":1.3,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":9.66,"y":4.3,"w":1,"lines":1,"size":0.09,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "timeline-vertical",
+    "name": "세로 타임라인",
+    "category": "타임라인·로드맵",
+    "tags": [
+      "타임라인",
+      "세로",
+      "연표"
+    ],
+    "description": "위에서 아래로 내려가며 시간 순서를 보여 준다",
+    "promptText": "세로 타임라인: 위에 제목, 왼쪽 1/4 지점에 세로선과 점 4개, 선 왼쪽에 날짜, 선 오른쪽에 사건 제목과 한 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"line","x1":3.1,"y1":1.7,"x2":3.1,"y2":5.9,"stroke":"accent","width":0.06},
+      {"type":"textLines","x":1.3,"y":1.9,"w":1.2,"lines":1,"size":0.15,"fill":"accent"},
+      {"type":"circle","cx":3.1,"cy":1.97,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":3.8,"y":1.88,"w":3,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":3.8,"y":2.26,"w":6.6,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.3,"y":3,"w":1.2,"lines":1,"size":0.15,"fill":"accent"},
+      {"type":"circle","cx":3.1,"cy":3.07,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":3.8,"y":2.98,"w":3,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":3.8,"y":3.36,"w":6.6,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.3,"y":4.1,"w":1.2,"lines":1,"size":0.15,"fill":"accent"},
+      {"type":"circle","cx":3.1,"cy":4.17,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":3.8,"y":4.08,"w":3,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":3.8,"y":4.46,"w":6.6,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.3,"y":5.2,"w":1.2,"lines":1,"size":0.15,"fill":"accent"},
+      {"type":"circle","cx":3.1,"cy":5.27,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":3.8,"y":5.18,"w":3,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":3.8,"y":5.56,"w":6.6,"lines":1,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "timeline-years",
+    "name": "연도별",
+    "category": "타임라인·로드맵",
+    "tags": [
+      "연도",
+      "연혁",
+      "역사",
+      "4개"
+    ],
+    "description": "연도를 크게 써서 해마다 있었던 일을 정리한다",
+    "promptText": "연도별 타임라인: 위에 제목, 4열로 각 열 맨 위에 포인트 색 큰 연도, 그 아래 열을 관통하는 가로선과 점, 그 아래 옅은 카드에 그해의 일 2줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"line","x1":0.9,"y1":2.95,"x2":11.1,"y2":2.95,"stroke":"border","width":0.05},
+      {"type":"textLines","x":0.9,"y":1.95,"w":1.39,"lines":1,"size":0.5,"fill":"accent"},
+      {"type":"circle","cx":1.02,"cy":2.95,"r":0.14,"fill":"accent"},
+      {"type":"rect","x":0.9,"y":3.45,"w":2.32,"h":2.4,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.15,"y":3.8,"w":1.16,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":1.15,"y":4.25,"w":1.82,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":3.52,"y":1.95,"w":1.39,"lines":1,"size":0.5,"fill":"accent"},
+      {"type":"circle","cx":3.64,"cy":2.95,"r":0.14,"fill":"accent"},
+      {"type":"rect","x":3.52,"y":3.45,"w":2.32,"h":2.4,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":3.77,"y":3.8,"w":1.16,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":3.77,"y":4.25,"w":1.82,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":6.15,"y":1.95,"w":1.39,"lines":1,"size":0.5,"fill":"accent"},
+      {"type":"circle","cx":6.27,"cy":2.95,"r":0.14,"fill":"accent"},
+      {"type":"rect","x":6.15,"y":3.45,"w":2.32,"h":2.4,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.4,"y":3.8,"w":1.16,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":6.4,"y":4.25,"w":1.82,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":8.77,"y":1.95,"w":1.39,"lines":1,"size":0.5,"fill":"accent"},
+      {"type":"circle","cx":8.89,"cy":2.95,"r":0.14,"fill":"accent"},
+      {"type":"rect","x":8.77,"y":3.45,"w":2.32,"h":2.4,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":9.02,"y":3.8,"w":1.16,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":9.02,"y":4.25,"w":1.82,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "roadmap",
+    "name": "로드맵 단계",
+    "category": "타임라인·로드맵",
+    "tags": [
+      "로드맵",
+      "계획",
+      "지금 다음 나중",
+      "칸반"
+    ],
+    "description": "앞으로 할 일을 지금·다음·나중 세 칸으로 나눠 보여 준다",
+    "promptText": "로드맵: 위에 제목, \"지금·다음·나중\" 3열, 각 열 위에 알약 모양 단계 이름표(지금만 포인트 색), 그 아래 할 일 카드를 2~3장씩 세로로 쌓음",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.6,"w":1.5,"h":0.48,"fill":"accent","radius":0.24},
+      {"type":"rect","x":0.9,"y":2.35,"w":3.2,"h":1.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.15,"y":2.6,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":1.15,"y":2.93,"w":2.24,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"rect","x":0.9,"y":3.63,"w":3.2,"h":1.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.15,"y":3.88,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":1.15,"y":4.21,"w":2.24,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"rect","x":0.9,"y":4.92,"w":3.2,"h":1.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.15,"y":5.17,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":1.15,"y":5.5,"w":2.24,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"rect","x":4.4,"y":1.6,"w":1.5,"h":0.48,"fill":"accent2","radius":0.24},
+      {"type":"rect","x":4.4,"y":2.35,"w":3.2,"h":1.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":4.65,"y":2.6,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":4.65,"y":2.93,"w":2.24,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"rect","x":4.4,"y":3.63,"w":3.2,"h":1.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":4.65,"y":3.88,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":4.65,"y":4.21,"w":2.24,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"rect","x":4.4,"y":4.92,"w":3.2,"h":1.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":4.65,"y":5.17,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":4.65,"y":5.5,"w":2.24,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"rect","x":7.9,"y":1.6,"w":1.5,"h":0.48,"fill":"border","radius":0.24},
+      {"type":"rect","x":7.9,"y":2.35,"w":3.2,"h":1.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":8.15,"y":2.6,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":8.15,"y":2.93,"w":2.24,"lines":1,"size":0.09,"fill":"text","opacity":0.45},
+      {"type":"rect","x":7.9,"y":3.63,"w":3.2,"h":1.08,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":8.15,"y":3.88,"w":1.6,"lines":1,"size":0.14,"fill":"text"},
+      {"type":"textLines","x":8.15,"y":4.21,"w":2.24,"lines":1,"size":0.09,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "gantt",
+    "name": "간트형 일정",
+    "category": "타임라인·로드맵",
+    "tags": [
+      "간트",
+      "일정",
+      "기간",
+      "스케줄"
+    ],
+    "description": "여러 작업의 시작과 끝을 가로 막대로 겹쳐 보여 주는 일정표",
+    "promptText": "간트형 일정: 위에 제목, 맨 위에 기간(주·월) 눈금 6칸, 왼쪽에 작업 이름 5줄, 각 줄에 시작과 길이가 서로 다른 가로 막대, 옅은 세로 눈금선, 진행 중인 막대만 포인트 색",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":3.5,"y":1.65,"w":0.52,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":3.3,"y1":1.95,"x2":3.3,"y2":6,"stroke":"border","width":0.05},
+      {"type":"textLines","x":4.8,"y":1.65,"w":0.52,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":4.6,"y1":1.95,"x2":4.6,"y2":6,"stroke":"border","width":0.05},
+      {"type":"textLines","x":6.1,"y":1.65,"w":0.52,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":5.9,"y1":1.95,"x2":5.9,"y2":6,"stroke":"border","width":0.05},
+      {"type":"textLines","x":7.4,"y":1.65,"w":0.52,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":7.2,"y1":1.95,"x2":7.2,"y2":6,"stroke":"border","width":0.05},
+      {"type":"textLines","x":8.7,"y":1.65,"w":0.52,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":8.5,"y1":1.95,"x2":8.5,"y2":6,"stroke":"border","width":0.05},
+      {"type":"textLines","x":10,"y":1.65,"w":0.52,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"line","x1":9.8,"y1":1.95,"x2":9.8,"y2":6,"stroke":"border","width":0.05},
+      {"type":"line","x1":0.9,"y1":1.95,"x2":11.1,"y2":1.95,"stroke":"border","width":0.05},
+      {"type":"textLines","x":0.9,"y":2.36,"w":1.8,"lines":1,"size":0.14,"fill":"text","opacity":0.7},
+      {"type":"rect","x":3.3,"y":2.15,"w":2.6,"h":0.56,"fill":"accent2","radius":0.12},
+      {"type":"textLines","x":0.9,"y":3.17,"w":1.4,"lines":1,"size":0.14,"fill":"text","opacity":0.7},
+      {"type":"rect","x":4.6,"y":2.96,"w":2.6,"h":0.56,"fill":"accent2","radius":0.12},
+      {"type":"textLines","x":0.9,"y":3.98,"w":1.8,"lines":1,"size":0.14,"fill":"text","opacity":0.7},
+      {"type":"rect","x":5.9,"y":3.77,"w":3.2,"h":0.56,"fill":"accent","radius":0.12},
+      {"type":"textLines","x":0.9,"y":4.79,"w":1.4,"lines":1,"size":0.14,"fill":"text","opacity":0.7},
+      {"type":"rect","x":7.5,"y":4.58,"w":2,"h":0.56,"fill":"accent2","radius":0.12},
+      {"type":"textLines","x":0.9,"y":5.6,"w":1.8,"lines":1,"size":0.14,"fill":"text","opacity":0.7},
+      {"type":"rect","x":8.7,"y":5.39,"w":2.4,"h":0.56,"fill":"accent2","radius":0.12}
+    ]
+  },
+  {
+    "id": "milestones",
+    "name": "마일스톤",
+    "category": "타임라인·로드맵",
+    "tags": [
+      "마일스톤",
+      "목표 지점",
+      "지그재그"
+    ],
+    "description": "중요한 목표 지점을 선 위아래로 번갈아 표시한다",
+    "promptText": "마일스톤: 화면 가운데 가로선, 그 위에 큰 점 5개, 각 점의 설명 카드를 선 위·아래로 번갈아 배치하고 점과 카드를 짧은 세로선으로 연결, 마지막 점은 깃발처럼 포인트 색 강조",
+    "source": "generated",
+    "shapes": [
+      {"type":"line","x1":0.9,"y1":3.38,"x2":11.1,"y2":3.38,"stroke":"text","width":0.05,"opacity":0.6},
+      {"type":"line","x1":1.84,"y1":2.4,"x2":1.84,"y2":3.38,"stroke":"accent","width":0.05},
+      {"type":"circle","cx":1.84,"cy":3.38,"r":0.2,"fill":"accent2"},
+      {"type":"rect","x":0.9,"y":0.9,"w":1.88,"h":1.5,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.1,"y":1.2,"w":0.94,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":1.1,"y":1.6,"w":1.48,"lines":2,"size":0.1,"fill":"text","opacity":0.5},
+      {"type":"line","x1":3.92,"y1":3.38,"x2":3.92,"y2":4.35,"stroke":"accent","width":0.05},
+      {"type":"circle","cx":3.92,"cy":3.38,"r":0.2,"fill":"accent2"},
+      {"type":"rect","x":2.98,"y":4.35,"w":1.88,"h":1.5,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":3.18,"y":4.65,"w":0.94,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":3.18,"y":5.05,"w":1.48,"lines":2,"size":0.1,"fill":"text","opacity":0.5},
+      {"type":"line","x1":6,"y1":2.4,"x2":6,"y2":3.38,"stroke":"accent","width":0.05},
+      {"type":"circle","cx":6,"cy":3.38,"r":0.2,"fill":"accent2"},
+      {"type":"rect","x":5.06,"y":0.9,"w":1.88,"h":1.5,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":5.26,"y":1.2,"w":0.94,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":5.26,"y":1.6,"w":1.48,"lines":2,"size":0.1,"fill":"text","opacity":0.5},
+      {"type":"line","x1":8.08,"y1":3.38,"x2":8.08,"y2":4.35,"stroke":"accent","width":0.05},
+      {"type":"circle","cx":8.08,"cy":3.38,"r":0.2,"fill":"accent2"},
+      {"type":"rect","x":7.14,"y":4.35,"w":1.88,"h":1.5,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":7.34,"y":4.65,"w":0.94,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":7.34,"y":5.05,"w":1.48,"lines":2,"size":0.1,"fill":"text","opacity":0.5},
+      {"type":"line","x1":10.16,"y1":2.4,"x2":10.16,"y2":3.38,"stroke":"accent","width":0.05},
+      {"type":"circle","cx":10.16,"cy":3.38,"r":0.3,"fill":"accent"},
+      {"type":"rect","x":9.22,"y":0.9,"w":1.88,"h":1.5,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":9.42,"y":1.2,"w":0.94,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":9.42,"y":1.6,"w":1.48,"lines":2,"size":0.1,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "timeline-cards",
+    "name": "타임라인 카드",
+    "category": "타임라인·로드맵",
+    "tags": [
+      "타임라인",
+      "카드",
+      "4단계"
+    ],
+    "description": "시간 순서를 따라 각 시점을 카드로 자세히 설명한다",
+    "promptText": "타임라인 카드: 위에 제목, 그 아래 가로선과 점 4개, 각 점 아래에 날짜 라벨과 세로로 긴 카드(제목 + 설명 3줄)를 매달듯 배치",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"line","x1":0.9,"y1":1.9,"x2":11.1,"y2":1.9,"stroke":"accent","width":0.06},
+      {"type":"circle","cx":1.1,"cy":1.9,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":0.9,"y":2.4,"w":0.9,"lines":1,"size":0.12,"fill":"accent"},
+      {"type":"rect","x":0.9,"y":2.85,"w":2.32,"h":3.05,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.15,"y":3.2,"w":1.28,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":1.15,"y":3.65,"w":1.82,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":3.72,"cy":1.9,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":3.52,"y":2.4,"w":0.9,"lines":1,"size":0.12,"fill":"accent"},
+      {"type":"rect","x":3.52,"y":2.85,"w":2.32,"h":3.05,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":3.77,"y":3.2,"w":1.28,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":3.77,"y":3.65,"w":1.82,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":6.35,"cy":1.9,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":6.15,"y":2.4,"w":0.9,"lines":1,"size":0.12,"fill":"accent"},
+      {"type":"rect","x":6.15,"y":2.85,"w":2.32,"h":3.05,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.4,"y":3.2,"w":1.28,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.4,"y":3.65,"w":1.82,"lines":3,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":8.97,"cy":1.9,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":8.77,"y":2.4,"w":0.9,"lines":1,"size":0.12,"fill":"accent"},
+      {"type":"rect","x":8.77,"y":2.85,"w":2.32,"h":3.05,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":9.02,"y":3.2,"w":1.28,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":9.02,"y":3.65,"w":1.82,"lines":3,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "compare-2",
+    "name": "좌우 비교",
+    "category": "비교·관계",
+    "tags": [
+      "비교",
+      "좌우",
+      "VS",
+      "대결"
+    ],
+    "description": "두 가지를 좌우에 놓고 맞대어 비교한다",
+    "promptText": "좌우 비교: 위에 제목, 좌우에 같은 크기의 패널 2개(왼쪽은 옅은 면, 오른쪽은 포인트 색 면), 두 패널이 만나는 가운데에 \"VS\" 원형 배지, 각 패널에 이름과 특징 3줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.6,"w":4.95,"h":4.4,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.3,"y":2.05,"w":2.2,"lines":1,"size":0.24,"fill":"text"},
+      {"type":"textLines","x":1.3,"y":3.1,"w":3.6,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.3,"y":4.03,"w":3.6,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.3,"y":4.97,"w":3.6,"lines":1,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.15,"y":1.6,"w":4.95,"h":4.4,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":6.95,"y":2.05,"w":2.2,"lines":1,"size":0.24,"fill":"bg"},
+      {"type":"textLines","x":6.95,"y":3.1,"w":3.6,"lines":1,"size":0.13,"fill":"bg","opacity":0.7},
+      {"type":"textLines","x":6.95,"y":4.03,"w":3.6,"lines":1,"size":0.13,"fill":"bg","opacity":0.7},
+      {"type":"textLines","x":6.95,"y":4.97,"w":3.6,"lines":1,"size":0.13,"fill":"bg","opacity":0.7},
+      {"type":"circle","cx":6,"cy":3.8,"r":0.55,"fill":"bg","stroke":"text","width":0.06},
+      {"type":"textLines","x":5.7,"y":3.72,"w":0.6,"lines":1,"size":0.15,"fill":"text"}
+    ]
+  },
+  {
+    "id": "compare-3col",
+    "name": "3열 비교 (가운데 강조)",
+    "category": "비교·관계",
+    "tags": [
+      "비교",
+      "3열",
+      "요금제",
+      "추천"
+    ],
+    "description": "세 가지 안을 나란히 놓고 추천하는 하나를 도드라지게 한다",
+    "promptText": "3열 비교: 위에 제목, 세로로 긴 패널 3개, 각 패널 위에 색 띠 머리(이름)와 그 아래 항목 4줄, 가운데 패널만 포인트 색 머리와 테두리로 강조하고 위아래로 조금 더 크게",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.75,"w":3.17,"h":4.1,"fill":"surface","radius":0.14},
+      {"type":"rect","x":0.9,"y":1.75,"w":3.17,"h":0.85,"fill":"accent2","radius":0.14},
+      {"type":"textLines","x":1.2,"y":2.08,"w":1.43,"lines":1,"size":0.18,"fill":"bg"},
+      {"type":"circle","cx":1.32,"cy":3.19,"r":0.09,"fill":"accent2"},
+      {"type":"textLines","x":1.6,"y":3.13,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":1.32,"cy":3.88,"r":0.09,"fill":"accent2"},
+      {"type":"textLines","x":1.6,"y":3.82,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":1.32,"cy":4.57,"r":0.09,"fill":"accent2"},
+      {"type":"textLines","x":1.6,"y":4.51,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":1.32,"cy":5.26,"r":0.09,"fill":"accent2"},
+      {"type":"textLines","x":1.6,"y":5.2,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.42,"y":1.45,"w":3.17,"h":4.7,"fill":"bg","radius":0.14,"stroke":"accent"},
+      {"type":"rect","x":4.42,"y":1.45,"w":3.17,"h":0.85,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":4.72,"y":1.78,"w":1.43,"lines":1,"size":0.18,"fill":"bg"},
+      {"type":"circle","cx":4.84,"cy":2.97,"r":0.09,"fill":"accent"},
+      {"type":"textLines","x":5.12,"y":2.91,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":4.84,"cy":3.81,"r":0.09,"fill":"accent"},
+      {"type":"textLines","x":5.12,"y":3.75,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":4.84,"cy":4.64,"r":0.09,"fill":"accent"},
+      {"type":"textLines","x":5.12,"y":4.58,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":4.84,"cy":5.48,"r":0.09,"fill":"accent"},
+      {"type":"textLines","x":5.12,"y":5.42,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"rect","x":7.93,"y":1.75,"w":3.17,"h":4.1,"fill":"surface","radius":0.14},
+      {"type":"rect","x":7.93,"y":1.75,"w":3.17,"h":0.85,"fill":"accent2","radius":0.14},
+      {"type":"textLines","x":8.23,"y":2.08,"w":1.43,"lines":1,"size":0.18,"fill":"bg"},
+      {"type":"circle","cx":8.35,"cy":3.19,"r":0.09,"fill":"accent2"},
+      {"type":"textLines","x":8.63,"y":3.13,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":8.35,"cy":3.88,"r":0.09,"fill":"accent2"},
+      {"type":"textLines","x":8.63,"y":3.82,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":8.35,"cy":4.57,"r":0.09,"fill":"accent2"},
+      {"type":"textLines","x":8.63,"y":4.51,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":8.35,"cy":5.26,"r":0.09,"fill":"accent2"},
+      {"type":"textLines","x":8.63,"y":5.2,"w":1.87,"lines":1,"size":0.12,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "pros-cons",
+    "name": "장단점",
+    "category": "비교·관계",
+    "tags": [
+      "장단점",
+      "찬반",
+      "좋은 점 나쁜 점"
+    ],
+    "description": "좋은 점과 아쉬운 점을 두 칸으로 나눠 정리한다",
+    "promptText": "장단점: 위에 제목, 좌우 2열, 왼쪽 열 머리에 포인트 색 원(＋)과 \"장점\", 오른쪽 열 머리에 보조색 원(－)과 \"단점\", 각 열에 한 줄 항목 4개, 두 열 사이에 세로 구분선",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"line","x1":6,"y1":1.7,"x2":6,"y2":5.9,"stroke":"border","width":0.05},
+      {"type":"circle","cx":1.25,"cy":2.05,"r":0.35,"fill":"accent"},
+      {"type":"rect","x":1.07,"y":2,"w":0.36,"h":0.1,"fill":"bg","radius":0},
+      {"type":"rect","x":1.2,"y":1.87,"w":0.1,"h":0.36,"fill":"bg","radius":0},
+      {"type":"textLines","x":1.85,"y":1.95,"w":1.3,"lines":1,"size":0.2,"fill":"text"},
+      {"type":"circle","cx":1.02,"cy":3.05,"r":0.08,"fill":"accent"},
+      {"type":"textLines","x":1.35,"y":2.98,"w":3.6,"lines":1,"size":0.14,"fill":"text","opacity":0.55},
+      {"type":"circle","cx":1.02,"cy":3.85,"r":0.08,"fill":"accent"},
+      {"type":"textLines","x":1.35,"y":3.78,"w":3.6,"lines":1,"size":0.14,"fill":"text","opacity":0.55},
+      {"type":"circle","cx":1.02,"cy":4.65,"r":0.08,"fill":"accent"},
+      {"type":"textLines","x":1.35,"y":4.58,"w":3.6,"lines":1,"size":0.14,"fill":"text","opacity":0.55},
+      {"type":"circle","cx":1.02,"cy":5.45,"r":0.08,"fill":"accent"},
+      {"type":"textLines","x":1.35,"y":5.38,"w":3.6,"lines":1,"size":0.14,"fill":"text","opacity":0.55},
+      {"type":"circle","cx":6.85,"cy":2.05,"r":0.35,"fill":"accent2"},
+      {"type":"rect","x":6.67,"y":2,"w":0.36,"h":0.1,"fill":"bg","radius":0},
+      {"type":"textLines","x":7.45,"y":1.95,"w":1.3,"lines":1,"size":0.2,"fill":"text"},
+      {"type":"circle","cx":6.62,"cy":3.05,"r":0.08,"fill":"accent2"},
+      {"type":"textLines","x":6.95,"y":2.98,"w":3.6,"lines":1,"size":0.14,"fill":"text","opacity":0.55},
+      {"type":"circle","cx":6.62,"cy":3.85,"r":0.08,"fill":"accent2"},
+      {"type":"textLines","x":6.95,"y":3.78,"w":3.6,"lines":1,"size":0.14,"fill":"text","opacity":0.55},
+      {"type":"circle","cx":6.62,"cy":4.65,"r":0.08,"fill":"accent2"},
+      {"type":"textLines","x":6.95,"y":4.58,"w":3.6,"lines":1,"size":0.14,"fill":"text","opacity":0.55},
+      {"type":"circle","cx":6.62,"cy":5.45,"r":0.08,"fill":"accent2"},
+      {"type":"textLines","x":6.95,"y":5.38,"w":3.6,"lines":1,"size":0.14,"fill":"text","opacity":0.55}
+    ]
+  },
+  {
+    "id": "matrix-2x2",
+    "name": "2×2 매트릭스",
+    "category": "비교·관계",
+    "tags": [
+      "매트릭스",
+      "사분면",
+      "2축",
+      "우선순위"
+    ],
+    "description": "두 가지 기준으로 나눈 네 칸에 항목을 분류한다",
+    "promptText": "2×2 매트릭스: 가로축과 세로축이 가운데서 교차하는 사분면, 축 끝에 기준 이름 라벨, 네 칸에 각각 이름과 한 줄 설명, 오른쪽 위 칸만 포인트 색으로 강조",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.6,"w":3.6,"lines":1,"size":0.26,"fill":"text"},
+      {"type":"rect","x":2.2,"y":1.3,"w":4.2,"h":2.2,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":2.5,"y":1.65,"w":1.8,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":2.5,"y":2.1,"w":2.8,"lines":1,"size":0.1,"fill":"text","opacity":0.6},
+      {"type":"rect","x":6.55,"y":1.3,"w":4.2,"h":2.2,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":6.85,"y":1.65,"w":1.8,"lines":1,"size":0.17,"fill":"bg"},
+      {"type":"textLines","x":6.85,"y":2.1,"w":2.8,"lines":1,"size":0.1,"fill":"bg","opacity":0.6},
+      {"type":"rect","x":2.2,"y":3.65,"w":4.2,"h":2.2,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":2.5,"y":4,"w":1.8,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":2.5,"y":4.45,"w":2.8,"lines":1,"size":0.1,"fill":"text","opacity":0.6},
+      {"type":"rect","x":6.55,"y":3.65,"w":4.2,"h":2.2,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.85,"y":4,"w":1.8,"lines":1,"size":0.17,"fill":"text"},
+      {"type":"textLines","x":6.85,"y":4.45,"w":2.8,"lines":1,"size":0.1,"fill":"text","opacity":0.6},
+      {"type":"arrow","x1":1.9,"y1":6.1,"x2":10.95,"y2":6.1,"stroke":"text","width":0.05},
+      {"type":"arrow","x1":1.9,"y1":6.1,"x2":1.9,"y2":1.15,"stroke":"text","width":0.05},
+      {"type":"textLines","x":9.6,"y":6.3,"w":1.3,"lines":1,"size":0.1,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":0.5,"y":1.3,"w":1.1,"lines":1,"size":0.1,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "venn",
+    "name": "벤 다이어그램",
+    "category": "비교·관계",
+    "tags": [
+      "벤 다이어그램",
+      "공통점",
+      "겹침",
+      "교집합"
+    ],
+    "description": "두 가지의 공통점과 차이점을 겹친 원으로 보여 준다",
+    "promptText": "벤 다이어그램: 위에 제목, 반투명한 큰 원 2개를 가운데서 겹치게 배치(왼쪽 포인트 색, 오른쪽 보조색), 각 원 안쪽에 고유한 특징 2줄, 겹친 부분에 공통점 라벨",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"circle","cx":4.6,"cy":3.75,"r":2.05,"fill":"accent","opacity":0.55},
+      {"type":"circle","cx":7.4,"cy":3.75,"r":2.05,"fill":"accent2","opacity":0.55},
+      {"type":"textLines","x":3,"y":3.35,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":3,"y":3.8,"w":1.1,"lines":1,"size":0.1,"fill":"text","opacity":0.6},
+      {"type":"textLines","x":5.5,"y":3.6,"w":1,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":7.7,"y":3.35,"w":1.4,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":7.7,"y":3.8,"w":1.1,"lines":1,"size":0.1,"fill":"text","opacity":0.6}
+    ]
+  },
+  {
+    "id": "pyramid",
+    "name": "피라미드",
+    "category": "비교·관계",
+    "tags": [
+      "피라미드",
+      "위계",
+      "단계",
+      "기초"
+    ],
+    "description": "아래가 넓고 위가 좁은 층으로 중요도나 위계를 보여 준다",
+    "promptText": "피라미드: 위에 제목, 왼쪽에 위로 갈수록 좁아지는 4층 피라미드(맨 위층이 포인트 색, 아래로 갈수록 옅게), 각 층 오른쪽에 점선으로 이어진 층 이름과 한 줄 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":3.2,"y":1.6,"w":1.6,"h":1,"fill":"accent","radius":0.06,"opacity":1},
+      {"type":"line","x1":4.95,"y1":2.1,"x2":7.6,"y2":2.1,"stroke":"border","width":0.05,"dash":true},
+      {"type":"textLines","x":7.8,"y":1.9,"w":1.6,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":7.8,"y":2.22,"w":2.6,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"rect","x":2.45,"y":2.7,"w":3.1,"h":1,"fill":"accent2","radius":0.06,"opacity":1},
+      {"type":"line","x1":5.7,"y1":3.2,"x2":7.6,"y2":3.2,"stroke":"border","width":0.05,"dash":true},
+      {"type":"textLines","x":7.8,"y":3,"w":1.6,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":7.8,"y":3.32,"w":2.6,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"rect","x":1.7,"y":3.8,"w":4.6,"h":1,"fill":"accent2","radius":0.06,"opacity":0.75},
+      {"type":"line","x1":6.45,"y1":4.3,"x2":7.6,"y2":4.3,"stroke":"border","width":0.05,"dash":true},
+      {"type":"textLines","x":7.8,"y":4.1,"w":1.6,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":7.8,"y":4.42,"w":2.6,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"rect","x":0.95,"y":4.9,"w":6.1,"h":1,"fill":"accent2","radius":0.06,"opacity":0.5},
+      {"type":"line","x1":7.2,"y1":5.4,"x2":7.6,"y2":5.4,"stroke":"border","width":0.05,"dash":true},
+      {"type":"textLines","x":7.8,"y":5.2,"w":1.6,"lines":1,"size":0.16,"fill":"text"},
+      {"type":"textLines","x":7.8,"y":5.52,"w":2.6,"lines":1,"size":0.1,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "hierarchy",
+    "name": "계층도",
+    "category": "비교·관계",
+    "tags": [
+      "계층도",
+      "조직도",
+      "트리",
+      "구조"
+    ],
+    "description": "위에서 아래로 갈라지는 나무 모양으로 구조를 보여 준다",
+    "promptText": "계층도: 위에 제목, 맨 위 가운데에 최상위 상자 1개(포인트 색), 그 아래 2단에 상자 3개, 3단에 상자 6개(2단 상자마다 2개씩)를 선으로 연결한 나무 구조",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":4.9,"y":1.45,"w":2.2,"h":0.85,"fill":"accent","radius":0.14},
+      {"type":"textLines","x":5.3,"y":1.8,"w":1.4,"lines":1,"size":0.15,"fill":"bg"},
+      {"type":"line","x1":6,"y1":2.3,"x2":6,"y2":2.75,"stroke":"border","width":0.05},
+      {"type":"line","x1":2.5,"y1":2.75,"x2":9.5,"y2":2.75,"stroke":"border","width":0.05},
+      {"type":"line","x1":2.5,"y1":2.75,"x2":2.5,"y2":3.15,"stroke":"border","width":0.05},
+      {"type":"rect","x":1.4,"y":3.15,"w":2.2,"h":0.85,"fill":"accent2","radius":0.14},
+      {"type":"textLines","x":1.8,"y":3.5,"w":1.4,"lines":1,"size":0.14,"fill":"bg"},
+      {"type":"line","x1":2.5,"y1":4,"x2":2.5,"y2":4.4,"stroke":"border","width":0.05},
+      {"type":"line","x1":1.7,"y1":4.4,"x2":3.3,"y2":4.4,"stroke":"border","width":0.05},
+      {"type":"line","x1":1.7,"y1":4.4,"x2":1.7,"y2":4.8,"stroke":"border","width":0.05},
+      {"type":"rect","x":1,"y":4.8,"w":1.4,"h":0.8,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.3,"y":5.14,"w":0.8,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":3.3,"y1":4.4,"x2":3.3,"y2":4.8,"stroke":"border","width":0.05},
+      {"type":"rect","x":2.6,"y":4.8,"w":1.4,"h":0.8,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":2.9,"y":5.14,"w":0.8,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":6,"y1":2.75,"x2":6,"y2":3.15,"stroke":"border","width":0.05},
+      {"type":"rect","x":4.9,"y":3.15,"w":2.2,"h":0.85,"fill":"accent2","radius":0.14},
+      {"type":"textLines","x":5.3,"y":3.5,"w":1.4,"lines":1,"size":0.14,"fill":"bg"},
+      {"type":"line","x1":6,"y1":4,"x2":6,"y2":4.4,"stroke":"border","width":0.05},
+      {"type":"line","x1":5.2,"y1":4.4,"x2":6.8,"y2":4.4,"stroke":"border","width":0.05},
+      {"type":"line","x1":5.2,"y1":4.4,"x2":5.2,"y2":4.8,"stroke":"border","width":0.05},
+      {"type":"rect","x":4.5,"y":4.8,"w":1.4,"h":0.8,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":4.8,"y":5.14,"w":0.8,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":6.8,"y1":4.4,"x2":6.8,"y2":4.8,"stroke":"border","width":0.05},
+      {"type":"rect","x":6.1,"y":4.8,"w":1.4,"h":0.8,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":6.4,"y":5.14,"w":0.8,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":9.5,"y1":2.75,"x2":9.5,"y2":3.15,"stroke":"border","width":0.05},
+      {"type":"rect","x":8.4,"y":3.15,"w":2.2,"h":0.85,"fill":"accent2","radius":0.14},
+      {"type":"textLines","x":8.8,"y":3.5,"w":1.4,"lines":1,"size":0.14,"fill":"bg"},
+      {"type":"line","x1":9.5,"y1":4,"x2":9.5,"y2":4.4,"stroke":"border","width":0.05},
+      {"type":"line","x1":8.7,"y1":4.4,"x2":10.3,"y2":4.4,"stroke":"border","width":0.05},
+      {"type":"line","x1":8.7,"y1":4.4,"x2":8.7,"y2":4.8,"stroke":"border","width":0.05},
+      {"type":"rect","x":8,"y":4.8,"w":1.4,"h":0.8,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":8.3,"y":5.14,"w":0.8,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":10.3,"y1":4.4,"x2":10.3,"y2":4.8,"stroke":"border","width":0.05},
+      {"type":"rect","x":9.6,"y":4.8,"w":1.4,"h":0.8,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":9.9,"y":5.14,"w":0.8,"lines":1,"size":0.11,"fill":"text","opacity":0.6}
+    ]
+  },
+  {
+    "id": "spectrum",
+    "name": "스펙트럼",
+    "category": "비교·관계",
+    "tags": [
+      "스펙트럼",
+      "위치",
+      "양극단",
+      "척도"
+    ],
+    "description": "양 끝 사이 어디쯤에 있는지 한 줄의 척도 위에 표시한다",
+    "promptText": "스펙트럼: 위에 제목, 화면 가운데에 좌우로 긴 척도 막대(3구간으로 색이 진해짐), 양 끝에 반대되는 기준 이름, 척도 위에 위치를 나타내는 원형 표식 3개와 그 위 이름 라벨",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":3.35,"w":3.4,"h":0.4,"fill":"border","radius":0.2},
+      {"type":"rect","x":4.3,"y":3.35,"w":3.4,"h":0.4,"fill":"accent2","radius":0},
+      {"type":"rect","x":7.7,"y":3.35,"w":3.4,"h":0.4,"fill":"accent","radius":0.2},
+      {"type":"textLines","x":0.9,"y":4.1,"w":1.5,"lines":1,"size":0.14,"fill":"text","opacity":0.6},
+      {"type":"textLines","x":9.6,"y":4.1,"w":1.5,"lines":1,"size":0.14,"fill":"text","opacity":0.6},
+      {"type":"circle","cx":2.4,"cy":3.55,"r":0.34,"fill":"bg","stroke":"text","width":0.08},
+      {"type":"line","x1":2.4,"y1":2.75,"x2":2.4,"y2":3.2,"stroke":"text","width":0.05,"opacity":0.6},
+      {"type":"textLines","x":1.8,"y":2.4,"w":1.2,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"circle","cx":5.6,"cy":3.55,"r":0.34,"fill":"bg","stroke":"text","width":0.08},
+      {"type":"line","x1":5.6,"y1":2.75,"x2":5.6,"y2":3.2,"stroke":"text","width":0.05,"opacity":0.6},
+      {"type":"textLines","x":5,"y":2.4,"w":1.2,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"circle","cx":9.3,"cy":3.55,"r":0.34,"fill":"bg","stroke":"text","width":0.08},
+      {"type":"line","x1":9.3,"y1":2.75,"x2":9.3,"y2":3.2,"stroke":"text","width":0.05,"opacity":0.6},
+      {"type":"textLines","x":8.7,"y":2.4,"w":1.2,"lines":1,"size":0.15,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":5,"w":7,"lines":2,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "hub-spoke",
+    "name": "중심과 주변",
+    "category": "비교·관계",
+    "tags": [
+      "허브",
+      "중심",
+      "관계도",
+      "방사형"
+    ],
+    "description": "가운데 핵심 주제와 그것에 연결된 요소들을 방사형으로 보여 준다",
+    "promptText": "중심과 주변: 화면 가운데에 포인트 색 큰 원(핵심 주제), 그 둘레에 작은 원 6개를 고르게 놓고 가운데 원과 선으로 연결, 각 작은 원 옆에 이름 라벨",
+    "source": "generated",
+    "shapes": [
+      {"type":"line","x1":6,"y1":3.38,"x2":2.9,"y2":1.5,"stroke":"accent2","width":0.05},
+      {"type":"circle","cx":2.9,"cy":1.5,"r":0.5,"fill":"surface","stroke":"accent2","width":0.06},
+      {"type":"textLines","x":2.4,"y":2.18,"w":1,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":6,"y1":3.38,"x2":9.1,"y2":1.5,"stroke":"accent2","width":0.05},
+      {"type":"circle","cx":9.1,"cy":1.5,"r":0.5,"fill":"surface","stroke":"accent2","width":0.06},
+      {"type":"textLines","x":8.6,"y":2.18,"w":1,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":6,"y1":3.38,"x2":1.9,"y2":3.38,"stroke":"accent2","width":0.05},
+      {"type":"circle","cx":1.9,"cy":3.38,"r":0.5,"fill":"surface","stroke":"accent2","width":0.06},
+      {"type":"textLines","x":1.4,"y":4.06,"w":1,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":6,"y1":3.38,"x2":10.1,"y2":3.38,"stroke":"accent2","width":0.05},
+      {"type":"circle","cx":10.1,"cy":3.38,"r":0.5,"fill":"surface","stroke":"accent2","width":0.06},
+      {"type":"textLines","x":9.6,"y":4.06,"w":1,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":6,"y1":3.38,"x2":2.9,"y2":5.25,"stroke":"accent2","width":0.05},
+      {"type":"circle","cx":2.9,"cy":5.25,"r":0.5,"fill":"surface","stroke":"accent2","width":0.06},
+      {"type":"textLines","x":2.4,"y":5.93,"w":1,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"line","x1":6,"y1":3.38,"x2":9.1,"y2":5.25,"stroke":"accent2","width":0.05},
+      {"type":"circle","cx":9.1,"cy":5.25,"r":0.5,"fill":"surface","stroke":"accent2","width":0.06},
+      {"type":"textLines","x":8.6,"y":5.93,"w":1,"lines":1,"size":0.11,"fill":"text","opacity":0.6},
+      {"type":"circle","cx":6,"cy":3.38,"r":1.15,"fill":"accent"},
+      {"type":"textLines","x":5.3,"y":3.28,"w":1.4,"lines":1,"size":0.19,"fill":"bg"}
+    ]
+  },
+  {
+    "id": "summary",
+    "name": "정리",
+    "category": "정리·마무리",
+    "tags": [
+      "정리",
+      "요약",
+      "배경 반전",
+      "3줄"
+    ],
+    "invert": true,
+    "description": "발표 내용을 색 배경 위에 세 줄로 간추린다",
+    "promptText": "정리: 배경을 메인색으로 반전, 핵심 3줄 요약",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.9,"w":2.4,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":2.2,"w":0.5,"lines":1,"size":0.36,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.9,"y":2.25,"w":7.6,"lines":1,"size":0.26,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.57,"w":0.5,"lines":1,"size":0.36,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.9,"y":3.62,"w":6.5,"lines":1,"size":0.26,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":4.93,"w":0.5,"lines":1,"size":0.36,"fill":"text","opacity":0.5},
+      {"type":"textLines","x":1.9,"y":4.98,"w":5.4,"lines":1,"size":0.26,"fill":"text"}
+    ]
+  },
+  {
+    "id": "checkpoints",
+    "name": "체크포인트",
+    "category": "정리·마무리",
+    "tags": [
+      "체크포인트",
+      "확인",
+      "복습",
+      "점검"
+    ],
+    "description": "꼭 확인하고 넘어갈 내용을 체크 표시와 함께 정리한다",
+    "promptText": "체크포인트: 위에 제목, 가로로 긴 카드 3장을 세로로 쌓고 각 카드 왼쪽에 포인트 색 체크 원, 오른쪽에 확인할 내용 한 문장과 작은 보충 설명",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.6,"w":10.2,"h":1.3,"fill":"bg","radius":0.14,"stroke":"border"},
+      {"type":"circle","cx":1.65,"cy":2.25,"r":0.33,"fill":"accent"},
+      {"type":"circle","cx":1.65,"cy":2.25,"r":0.12,"fill":"bg"},
+      {"type":"textLines","x":2.35,"y":1.95,"w":5.5,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":2.35,"y":2.4,"w":3.6,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"rect","x":0.9,"y":3.15,"w":10.2,"h":1.3,"fill":"bg","radius":0.14,"stroke":"border"},
+      {"type":"circle","cx":1.65,"cy":3.8,"r":0.33,"fill":"accent"},
+      {"type":"circle","cx":1.65,"cy":3.8,"r":0.12,"fill":"bg"},
+      {"type":"textLines","x":2.35,"y":3.5,"w":5.5,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":2.35,"y":3.95,"w":3.6,"lines":1,"size":0.1,"fill":"text","opacity":0.45},
+      {"type":"rect","x":0.9,"y":4.7,"w":10.2,"h":1.3,"fill":"bg","radius":0.14,"stroke":"border"},
+      {"type":"circle","cx":1.65,"cy":5.35,"r":0.33,"fill":"accent"},
+      {"type":"circle","cx":1.65,"cy":5.35,"r":0.12,"fill":"bg"},
+      {"type":"textLines","x":2.35,"y":5.05,"w":5.5,"lines":1,"size":0.19,"fill":"text"},
+      {"type":"textLines","x":2.35,"y":5.5,"w":3.6,"lines":1,"size":0.1,"fill":"text","opacity":0.45}
+    ]
+  },
+  {
+    "id": "next-steps",
+    "name": "다음 단계",
+    "category": "정리·마무리",
+    "tags": [
+      "다음 단계",
+      "할 일",
+      "액션",
+      "계획"
+    ],
+    "description": "발표가 끝난 뒤 무엇을 할지 순서대로 안내한다",
+    "promptText": "다음 단계: 위에 제목, 3열 카드를 화살표로 연결, 각 카드에 \"1·2·3\" 큰 번호, 할 일 한 문장, 맨 아래 담당·기한을 적는 작은 알약 배지",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.8,"w":2.93,"h":3.9,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":1.2,"y":2.15,"w":0.55,"lines":1,"size":0.5,"fill":"accent"},
+      {"type":"textLines","x":1.2,"y":3.2,"w":2.03,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":1.2,"y":3.6,"w":1.53,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"rect","x":1.2,"y":4.85,"w":1.4,"h":0.4,"fill":"accent2","radius":0.2},
+      {"type":"arrow","x1":3.95,"y1":3.75,"x2":4.41,"y2":3.75,"stroke":"accent","width":0.07},
+      {"type":"rect","x":4.53,"y":1.8,"w":2.93,"h":3.9,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":4.83,"y":2.15,"w":0.55,"lines":1,"size":0.5,"fill":"accent"},
+      {"type":"textLines","x":4.83,"y":3.2,"w":2.03,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":4.83,"y":3.6,"w":1.53,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"rect","x":4.83,"y":4.85,"w":1.4,"h":0.4,"fill":"accent2","radius":0.2},
+      {"type":"arrow","x1":7.59,"y1":3.75,"x2":8.05,"y2":3.75,"stroke":"accent","width":0.07},
+      {"type":"rect","x":8.17,"y":1.8,"w":2.93,"h":3.9,"fill":"surface","radius":0.14},
+      {"type":"textLines","x":8.47,"y":2.15,"w":0.55,"lines":1,"size":0.5,"fill":"accent"},
+      {"type":"textLines","x":8.47,"y":3.2,"w":2.03,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"textLines","x":8.47,"y":3.6,"w":1.53,"lines":1,"size":0.18,"fill":"text"},
+      {"type":"rect","x":8.47,"y":4.85,"w":1.4,"h":0.4,"fill":"accent2","radius":0.2}
+    ]
+  },
+  {
+    "id": "key3",
+    "name": "핵심 3가지",
+    "category": "정리·마무리",
+    "tags": [
+      "핵심",
+      "3가지",
+      "요점",
+      "테이크어웨이"
+    ],
+    "description": "꼭 가져갈 세 가지를 큼직하게 다시 짚어 준다",
+    "promptText": "핵심 3가지: 위에 제목, 카드 없이 3열로 나누고 각 열 위에 포인트 색 굵은 가로선, 그 아래 큰 번호·핵심 문장 2줄·설명 2줄",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":0.65,"w":4.2,"lines":1,"size":0.3,"fill":"text"},
+      {"type":"rect","x":0.9,"y":1.8,"w":3.07,"h":0.1,"fill":"accent","radius":0},
+      {"type":"textLines","x":0.9,"y":2.3,"w":0.7,"lines":1,"size":0.6,"fill":"accent","opacity":0.4},
+      {"type":"textLines","x":0.9,"y":3.4,"w":2.76,"lines":1,"size":0.22,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.85,"w":1.84,"lines":1,"size":0.22,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":4.6,"w":2.91,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":4.47,"y":1.8,"w":3.07,"h":0.1,"fill":"accent","radius":0},
+      {"type":"textLines","x":4.47,"y":2.3,"w":0.7,"lines":1,"size":0.6,"fill":"accent","opacity":0.4},
+      {"type":"textLines","x":4.47,"y":3.4,"w":2.76,"lines":1,"size":0.22,"fill":"text"},
+      {"type":"textLines","x":4.47,"y":3.85,"w":1.84,"lines":1,"size":0.22,"fill":"text"},
+      {"type":"textLines","x":4.47,"y":4.6,"w":2.91,"lines":2,"size":0.13,"fill":"text","opacity":0.5},
+      {"type":"rect","x":8.03,"y":1.8,"w":3.07,"h":0.1,"fill":"accent","radius":0},
+      {"type":"textLines","x":8.03,"y":2.3,"w":0.7,"lines":1,"size":0.6,"fill":"accent","opacity":0.4},
+      {"type":"textLines","x":8.03,"y":3.4,"w":2.76,"lines":1,"size":0.22,"fill":"text"},
+      {"type":"textLines","x":8.03,"y":3.85,"w":1.84,"lines":1,"size":0.22,"fill":"text"},
+      {"type":"textLines","x":8.03,"y":4.6,"w":2.91,"lines":2,"size":0.13,"fill":"text","opacity":0.5}
+    ]
+  },
+  {
+    "id": "qna",
+    "name": "Q&A",
+    "category": "정리·마무리",
+    "tags": [
+      "Q&A",
+      "질문",
+      "질의응답"
+    ],
+    "description": "질문을 받는 시간임을 알리는 슬라이드",
+    "promptText": "Q&A: 화면 가운데에 아주 큰 \"Q&A\" 글자, 그 아래 \"질문을 기다립니다\" 같은 한 줄, 주변에 크기가 다른 말풍선 모양 장식 2개",
+    "source": "generated",
+    "shapes": [
+      {"type":"circle","cx":2.6,"cy":1.9,"r":0.75,"fill":"accent2","opacity":0.6},
+      {"type":"circle","cx":9.7,"cy":4.9,"r":1.05,"fill":"accent","opacity":0.35},
+      {"type":"textLines","x":3.9,"y":2.45,"w":4.2,"lines":1,"size":1,"fill":"accent"},
+      {"type":"textLines","x":4.3,"y":4.1,"w":3.4,"lines":1,"size":0.17,"fill":"text","opacity":0.55}
+    ]
+  },
+  {
+    "id": "closing",
+    "name": "마무리",
+    "category": "정리·마무리",
+    "tags": [
+      "마무리",
+      "감사",
+      "끝",
+      "연락처"
+    ],
+    "description": "감사 인사로 발표를 끝내고 연락할 곳을 알려 준다",
+    "promptText": "마무리: 감사 문구와 Q&A 안내",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":3.2,"y":2.2,"w":5.6,"lines":1,"size":0.52,"fill":"text"},
+      {"type":"textLines","x":4.4,"y":3.1,"w":3.2,"lines":1,"size":0.16,"fill":"text","opacity":0.5},
+      {"type":"line","x1":0.9,"y1":4.75,"x2":11.1,"y2":4.75,"stroke":"border","width":0.05},
+      {"type":"circle","cx":2.3,"cy":5.4,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":2.7,"y":5.33,"w":1.3,"lines":1,"size":0.13,"fill":"text","opacity":0.6},
+      {"type":"circle","cx":5.1,"cy":5.4,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":5.5,"y":5.33,"w":1.3,"lines":1,"size":0.13,"fill":"text","opacity":0.6},
+      {"type":"circle","cx":7.9,"cy":5.4,"r":0.2,"fill":"accent"},
+      {"type":"textLines","x":8.3,"y":5.33,"w":1.3,"lines":1,"size":0.13,"fill":"text","opacity":0.6}
+    ]
+  },
+  {
+    "id": "thanks-contact",
+    "name": "감사 + 연락처 카드",
+    "category": "정리·마무리",
+    "tags": [
+      "감사",
+      "연락처",
+      "명함",
+      "QR"
+    ],
+    "description": "감사 인사 옆에 명함처럼 연락처를 정리해 보여 준다",
+    "promptText": "감사와 연락처: 왼쪽에 큰 감사 문구 2줄, 오른쪽에 명함 같은 카드(원형 프로필 사진 자리, 이름, 이메일·전화·SNS 3줄)와 카드 아래쪽 QR 코드 자리 네모",
+    "source": "generated",
+    "shapes": [
+      {"type":"textLines","x":0.9,"y":2.4,"w":4.4,"lines":1,"size":0.52,"fill":"text"},
+      {"type":"textLines","x":0.9,"y":3.25,"w":2.8,"lines":1,"size":0.52,"fill":"accent"},
+      {"type":"textLines","x":0.9,"y":4.3,"w":3.2,"lines":1,"size":0.14,"fill":"text","opacity":0.5},
+      {"type":"rect","x":6.7,"y":1.1,"w":4.4,"h":4.55,"fill":"surface","radius":0.14},
+      {"type":"circle","cx":7.55,"cy":1.95,"r":0.45,"fill":"muted"},
+      {"type":"textLines","x":8.25,"y":1.75,"w":1.8,"lines":1,"size":0.2,"fill":"text"},
+      {"type":"textLines","x":8.25,"y":2.15,"w":1.2,"lines":1,"size":0.1,"fill":"text","opacity":0.5},
+      {"type":"circle","cx":7.25,"cy":3.05,"r":0.1,"fill":"accent"},
+      {"type":"textLines","x":7.55,"y":2.99,"w":2,"lines":1,"size":0.11,"fill":"text","opacity":0.55},
+      {"type":"circle","cx":7.25,"cy":3.48,"r":0.1,"fill":"accent"},
+      {"type":"textLines","x":7.55,"y":3.42,"w":2,"lines":1,"size":0.11,"fill":"text","opacity":0.55},
+      {"type":"circle","cx":7.25,"cy":3.92,"r":0.1,"fill":"accent"},
+      {"type":"textLines","x":7.55,"y":3.86,"w":2,"lines":1,"size":0.11,"fill":"text","opacity":0.55},
+      {"type":"rect","x":9.75,"y":4.3,"w":1,"h":1,"fill":"bg","radius":0.06,"stroke":"text"},
+      {"type":"rect","x":9.95,"y":4.5,"w":0.6,"h":0.6,"fill":"text","radius":0,"opacity":0.6}
+    ]
+  }
+]

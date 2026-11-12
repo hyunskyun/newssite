@@ -726,7 +726,10 @@ const genIds = new Set(generated.map((g) => g.id));
 const clash = manual.filter((m) => genIds.has(m.id));
 if (clash.length) throw new Error(`직접 추가한 항목의 id가 생성 항목과 겹칩니다: ${clash.map((c) => c.id).join(', ')}`);
 
-const all = [...generated, ...manual];
+// 카테고리 순서대로 모아 둔다(같은 카테고리 안에서는 정의한 순서 유지, 직접 추가한 항목은 그 뒤).
+const categoryOrder = (JSON.parse(readFileSync(fileURLToPath(new URL('../src/data/slideCategories.json', import.meta.url)), 'utf8')) as { name: string }[]).map((c) => c.name);
+const rank = (s: SlideType) => { const i = categoryOrder.indexOf(s.category); return i < 0 ? categoryOrder.length : i; };
+const all = [...generated, ...manual].map((s, i) => ({ s, i })).sort((a, b) => rank(a.s) - rank(b.s) || a.i - b.i).map((x) => x.s);
 // 한 항목을 여러 줄로 쓰되 도형은 한 줄에 하나씩 써서 사람이 읽고 고치기 쉽게 한다.
 const body = all
   .map((s) => {

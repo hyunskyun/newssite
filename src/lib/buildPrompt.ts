@@ -3,7 +3,7 @@
  * 같은 입력이면 항상 같은 문자열을 돌려준다(AI 호출·시간·난수 없음).
  */
 import { colorById, defaults, DETAIL_KEYS, detailById, layoutById, slideTypeById, styleById, typographyById } from '../data';
-import type { AppState, ColorSet, DetailKey, LayoutOption, Option, PromptMode, SlideType, StepKey, TypographyOption } from '../types';
+import type { AppState, ColorSet, DetailKey, LayoutOption, Option, PromptMode, SlideType, TypographyOption } from '../types';
 import { josa } from './korean';
 
 export type Resolved = {
@@ -94,11 +94,3 @@ export function buildPrompt(state: AppState, mode: PromptMode): string {
   }
   return lines.join('\n');
 }
-
-export const STEP_LABEL: Record<StepKey, string> = {
-  style: '스타일',
-  layout: '레이아웃·그리드',
-  color: '컬러',
-  typography: '타이포그래피',
-  details: '디테일',
-};

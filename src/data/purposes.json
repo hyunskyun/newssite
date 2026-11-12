@@ -1,0 +1,6 @@
+[
+  { "id": "slides", "name": "슬라이드", "isDefault": true },
+  { "id": "poster", "name": "포스터" },
+  { "id": "website", "name": "웹사이트" },
+  { "id": "report", "name": "보고서" }
+]

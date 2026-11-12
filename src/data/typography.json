@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sans-single", "name": "깔끔한 산세리프 단일",
+    "description": "획 끝에 장식이 없는 고딕체 하나로 제목과 본문을 모두 쓴다",
+    "promptText": "깔끔한 산세리프(고딕) 글꼴 하나로 통일, 제목과 본문은 굵기와 크기로만 구분 (한글 Pretendard)",
+    "shortText": "산세리프 글꼴", "preview": "typo", "isDefault": true,
+    "sample": { "headingFont": "sans", "bodyFont": "sans", "headingWeight": 700, "bodyWeight": 400 }
+  },
+  {
+    "id": "sans-serif-mix", "name": "산세리프+세리프 조합",
+    "description": "제목은 명조체(세리프), 본문은 고딕체(산세리프)로 섞어 품격을 더한다",
+    "promptText": "제목은 세리프(명조), 본문은 산세리프(고딕) 조합 (한글 Noto Serif KR + Pretendard)",
+    "shortText": "세리프 제목 + 산세리프 본문", "preview": "typo",
+    "sample": { "headingFont": "serif", "bodyFont": "sans", "headingWeight": 700, "bodyWeight": 400 }
+  },
+  {
+    "id": "bold-thin", "name": "굵은 제목+가는 본문",
+    "description": "아주 굵은 제목과 가는 본문의 굵기 차이로 시선을 끈다",
+    "promptText": "아주 굵은 산세리프 제목과 가는 본문으로 굵기 대비를 크게 (한글 Pretendard ExtraBold + Light)",
+    "shortText": "굵은 제목 + 가는 본문", "preview": "typo",
+    "sample": { "headingFont": "sans", "bodyFont": "sans", "headingWeight": 900, "bodyWeight": 300 }
+  },
+  {
+    "id": "mono-point", "name": "모노스페이스 포인트",
+    "description": "글자 폭이 모두 같은 코딩용 글꼴을 숫자·라벨에 포인트로 쓴다",
+    "promptText": "산세리프 본문에 모노스페이스(고정폭) 글꼴을 숫자·라벨·캡션의 포인트로 사용 (Pretendard + JetBrains Mono)",
+    "shortText": "모노스페이스 포인트", "preview": "typo",
+    "sample": { "headingFont": "sans", "bodyFont": "sans", "headingWeight": 700, "bodyWeight": 400, "pointFont": "mono" }
+  },
+  {
+    "id": "round-sans", "name": "둥근 산세리프(친근)",
+    "description": "획 끝이 둥근 고딕체로 부드럽고 친근한 느낌을 준다",
+    "promptText": "획 끝이 둥근 산세리프 글꼴로 친근하고 부드럽게",
+    "shortText": "둥근 산세리프", "preview": "typo",
+    "sample": { "headingFont": "round", "bodyFont": "sans", "headingWeight": 400, "bodyWeight": 400 }
+  },
+  {
+    "id": "serif-classic", "name": "세리프 중심(클래식)",
+    "description": "제목과 본문 모두 명조체로 써서 책·신문 같은 고전적인 느낌을 준다",
+    "promptText": "제목과 본문 모두 세리프(명조) 글꼴로 클래식하게 (한글 Noto Serif KR)",
+    "shortText": "세리프 글꼴", "preview": "typo",
+    "sample": { "headingFont": "serif", "bodyFont": "serif", "headingWeight": 700, "bodyWeight": 400 }
+  }
+]
